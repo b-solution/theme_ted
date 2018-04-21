@@ -1,0 +1,297 @@
+@import url("../variables.less");
+@import url("../mixins.less");
+/*Styles for DMSF plugin (Document Management System Features)*/
+
+.dmfs_entries {
+    .ui-widget-header {
+        background: none !important;
+        border: none !important;
+    }
+
+    .controls input {
+        text-transform: none;
+        font-size: @BFS;
+    }
+
+    /*----- Default button -----*/
+    input[value="Email"] {
+        .rounded;
+        .gradient-default;
+        .btn;
+        font-size: 12px;
+        &:hover, &:focus, &:active {
+            background: @gray-lighter !important;
+        }
+
+    }
+
+    /*----- Red button -----*/
+    input[value="Delete"] {
+        .gradient-red;
+        &:hover, &:focus, &:active {
+            background: @red !important;
+        }
+
+    }
+	
+	div.dataTables_wrapper .ui-toolbar {
+		padding: 2*@GGW 0;
+	}
+
+    div.dataTables_wrapper div.fg-toolbar input,
+    div.dataTables_wrapper div.fg-toolbar button,
+    div.dataTables_wrapper div.fg-toolbar select {
+        font-size: @BFS;
+    }
+
+    /*----- Table -----*/
+    table.entries {
+        .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+            background: none;
+            border: 1px solid @border-color;
+            color: @nav-color;
+            text-transform: uppercase;
+        }
+
+        th.check div.DataTables_sort_wrapper {
+            width: 17px;
+            margin: auto;
+        }
+
+        tr td.sorting_2,
+        tr {
+            background: none !important;
+        }
+
+        tr {
+            border-bottom: 1px solid @border-color;
+        }
+
+        tbody td,
+        th {
+            padding: @GGW;
+        }
+
+        tbody td {
+            border-left: 1px solid @border-color;
+            border-right: 1px solid @border-color;
+        }
+
+        td.modified,
+        td.author,
+        td.size,
+        td.modified,
+        td.version,
+        td.workflow {
+            font-size: @BFS;
+        }
+
+        td.actions {
+            width: 110px;
+            min-width: 110px;
+        }
+
+        .actions .icon {
+            padding: 0;
+            margin-right: 0 !important;
+        }
+
+        .right_icon_box {
+            padding: 0;
+            float: none;
+            white-space: normal;
+            width: auto;
+        }
+    }
+    
+    div.dataTables_wrapper div.fg-toolbar input,
+    div.dataTables_wrapper div.fg-toolbar button,
+    div.dataTables_wrapper div.fg-toolbar select {
+        @media (max-width: 360px) {
+        	padding: 0 @GGW;
+        }
+    }
+}
+
+#uploadform {
+    h3 {
+        margin-top: 0;
+    }
+
+    .ui-widget-header {
+        padding: @GGW;
+    }
+
+    .plupload_header {
+        color: @text-color;
+        background: none !important;
+    }
+
+    .plupload_header_title {
+        font-size: @BFS;
+        margin-right: @GGW;
+        font-weight: bold;
+    }
+
+    .plupload_header_title:after {
+        content: ":";
+    }
+
+    .plupload_header_title,
+    .plupload_header_text {
+        float: left;
+        line-height: @BLH;
+        padding: 0;
+    }
+
+    .plupload_header_text {
+        font-weight: normal;
+        font-size: @BFS;
+    }
+
+    .plupload_button {
+        .btn;
+        .rounded;
+        font-size: 14px;
+        font-weight: normal;
+        margin-bottom: @GGW;
+    }
+
+    .plupload_add {
+        .gradient-green;
+        &:hover, &:focus, &:active {
+            background: @green;
+        }
+    }
+
+    .plupload_start {
+        .gradient-green;
+        &:hover, &:focus, &:active {
+            background: @green;
+        }
+    }
+
+    .plupload_stop {
+        .gradient-red;
+        &:hover, &:focus, &:active {
+            background: @red;
+        }
+    }
+
+    .fa:before {
+        color: @white !important;
+    }
+
+    .ui-icon {
+        text-indent: 0;
+        left: @GGW;
+        top: @GGW;
+        overflow: visible;
+    }
+
+    tr.ui-state-default {
+        background: none;
+        color: @text-color;
+        font-weight: normal;
+    }
+
+    table.plupload_filelist:first-of-type tr.ui-widget-header {
+        background: #ddd !important;
+    }
+
+    table.plupload_filelist tr.ui-widget-header {
+        color: @nav-color;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .plupload_file_size,
+    .plupload_file_status {
+        text-align: left;
+    }
+
+    .plupload_cell {
+        padding: @GGW;
+    }
+    
+    .plupload_filelist .plupload_button {
+        @media (max-width: 760px) {
+        	padding: 0 @GGW;
+        }
+    }
+    
+    .plupload_filelist .plupload_button {
+        @media (max-width: 500px) {
+            clear: both;
+            width: 190px;
+        }
+    }
+    
+    .plupload_file_size,
+    .plupload_file_status {
+        @media (max-width: 500px) {
+        	display: none;
+        }
+    }
+}
+
+.box.dmsf_detail {
+    .splitcontentright.clear {
+        clear: none !important;
+    }
+
+    label {
+        float: left;
+        font-weight: bold;
+        vertical-align: middle;
+        width: auto;
+        min-width: 60px;
+        text-align: left;
+    }
+
+    .splitcontentleft:first-of-type label {
+        line-height: 28px;
+    }
+
+    p.no-ident {
+        clear: both;
+        display: block;
+    }
+
+    div.data {
+        margin-left: 0;
+        margin-bottom: 2*@GGW;
+    }
+
+    #link_internal {
+        label {
+            width: 110px;
+        }
+
+        select {
+            width: 190px;
+        }
+    }
+
+    label[for="dmsf_link_name"] {
+        width: 110px;
+        line-height: 28px;
+    }
+}
+
+.controller-dmsf {
+	#content>.contextual a.icon-edit:before {
+		content: none;
+	}
+	
+	[class^="icon"],
+	.ui-icon {
+		background-image: none !important;
+	}
+	
+	.ui-icon-circle-plus:before,
+	.ui-icon-circle-arrow-e:before,
+	.ui-icon-circle-close:before {
+		color: @white;
+	}
+}

@@ -1,0 +1,84 @@
+@import url("../variables.less");
+@import url("../mixins.less");
+/* ------------ Styles for Easy Gantt plugin ------------ */
+
+#content #easy_gantt.redmine {
+    #sample_close_button {
+        .btn;
+        .gradient-red;
+        .rounded;
+    }
+
+    .button {
+        font-size: @BFS;
+    }
+
+    #easy_gantt_menu {
+        .push-left .gantt-menu-button {
+            background-image: none;
+        }
+
+        .gantt-menu-button {
+            .rounded-top;
+            padding: @GGW;
+            margin-bottom: -1px;
+        }
+
+        .gantt-menu-button.save.fa:before {
+            color: @white;
+        }
+
+        .gantt-menu-button.fa-exclamation-circle:before {
+            color: @icon-color;
+        }
+
+        .active {
+            background-color: @border-color;
+            border: 1px solid @border-color;
+            border-bottom: none;
+            color: @link-color;
+        }
+        
+        .push-right {
+            @media (max-width: 420px) {
+                .rounded;
+                float: none;
+                text-align: left;
+                clear: both;
+                display: block;
+                background: @white;
+                border: 1px solid @border-color;
+                padding: @GGW;
+                margin-bottom: @GGW;
+            }
+            
+            div {
+                @media (max-width: 420px) {
+                	display: block;
+                }
+            }
+    
+            div a {
+                @media (max-width: 420px) {
+                	margin: 0;
+                }
+            }
+        }
+    }
+
+    .gantt_task_line .gantt_task_content {
+        border: 1px solid rgba(51, 141, 71, 1);
+    }
+
+    #easy_gantt_footer {
+        .gantt-menu-button {
+            padding: @GGW;
+        }
+
+        #button_sample a {
+            .btn;
+            .gradient-default;
+            .rounded;
+        }
+    }
+}

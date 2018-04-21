@@ -1,0 +1,52 @@
+/*Import other styles*/
+@import "css/application.css";
+@import "css/context-menu.css";
+@import "css/fixed_menu.css";
+@import "css/fixed_sidebar.css";
+@import "css/font.css";
+@import "css/header.css";
+@import "css/issue_priorities.css";
+@import "css/modal.css";
+@import "css/typo.css";
+@import "css/view_login.css";
+@import "css/view_mypage.css";
+@import "css/view_issue.css";
+@import "css/view_project.css";
+
+/*Import responsive styles*/
+@import "css/responsive.css";
+@import "css/responsive-mobile-menu.css";
+
+/*Import plugin styles*/
+@import "css/plugins/plugin_custom_menu.css";
+@import "css/plugins/plugin_dashboard.css";
+@import "css/plugins/plugin_dmsf.css";
+@import "css/plugins/plugin_easy_gantt.css";
+@import "css/plugins/plugin_extra_queries.css";
+@import "css/plugins/plugin_git_hosting.css";
+@import "css/plugins/plugin_issue_tabs.css";
+@import "css/plugins/plugin_mail_reminer.css";
+@import "css/plugins/plugin_progressive_projects.css";
+@import "css/plugins/plugin_redmine_agile.css";
+@import "css/plugins/plugin_redmine_checklist.css";
+@import "css/plugins/plugin_redmine_cms.css";
+@import "css/plugins/plugin_redmine_crm.css";
+@import "css/plugins/plugin_redmine_finance.css";
+@import "css/plugins/plugin_redmine_helpdesk.css";
+@import "css/plugins/plugin_redmine_news_notification.css";
+@import "css/plugins/plugin_redmine_people.css";
+@import "css/plugins/plugin_redmine_products.css";
+@import "css/plugins/plugin_redmine_questions.css";
+@import "css/plugins/plugin_sidebar_hide.css";
+@import "css/plugins/plugin_sudo.css";
+@import "css/plugins/plugin_time_tracker.css";
+@import "css/plugins/plugin_unread_issues.css";
+@import "css/plugins/plugin_usability.css";
+
+/*Font*/
+@import "css/icons.css";
+/* @import "../font/fontawesome/font-awesome.css"; */
+@import "../font/fontawesome/font-awesome.min.css";
+
+/*User overrides*/
+@import "css/overrides/overrides.css";

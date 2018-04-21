@@ -1,0 +1,119 @@
+@import url("../variables.less");
+@import url("../mixins.less");
+/*Additional styles for Time tracker*/
+
+#account {
+    .icon-stop, .icon-start {
+        background-image: none;
+    }
+}
+
+input#ime_tracker_round {
+    line-height: normal !important;
+}
+
+#top-menu #account ul a.icon-start:before {
+    line-height: 20px !important;
+}
+
+table.tt_list {
+    th {
+        text-align: center;
+    }
+    
+    td:nth-child(2),
+    th:nth-child(2) {
+        @media (max-width: 480px) {        
+        	display: none;
+        }
+    }
+    
+    div.task_form_input {
+        clear: both;
+        margin-bottom: 15px;
+    }
+    
+    input.tl_book_form_button,
+    input.tl_edit_form_update_button {
+        margin: 0 @GGW 0 0;
+        clear: both;
+        display: block;
+        float: left;
+    }
+    
+    a:first-of-type {
+        float: left;
+    }
+}
+
+.tt_list .icon_column {
+    width: auto !important;
+}
+
+/*Additional styles for Time logger*/
+
+#top-menu #account #time-logger-menu {
+    a.icon {
+        padding: 1.5*@GGW 0 1.5*@GGW 2*@GGW !important;
+    }
+
+    .icon-pause-action {
+        background-image: url('../../../images/pause.png');
+        margin-left: @GGW;
+    }
+
+    .icon-stop-action {
+        background-image: url('../../../images/stop.png');
+    }
+
+    .icon-list-action {
+        background-image: url('../../../images/list.png');
+    }
+
+    .icon-start-action {
+        background-image: url('../../../images/start.png');
+    }
+
+    .icon-action {
+        padding: 0 @GGW;
+        margin-left: @GGW;
+    }
+
+    .icon-start:before {
+        content: none;
+    }
+
+    .icon-start {
+        background-image: url("../../../images/time_start.png") !important;
+    }
+
+    .icon-pause {
+        background-image: url("../../../images/time_pause.png") !important;
+    }
+
+    .icon-stop {
+        background-image: url("../../../images/time_stop.png") !important;
+    }
+
+    .icon-clock {
+        background-image: url("../../../images/time.png") !important;
+    }
+
+    [class*="icon-"] {
+        margin-right: 0;
+    }
+}
+
+#context-menu {
+    .icon-start, .icon-pause, .icon-stop, .icon-clock {
+        background-image: none;
+        padding-left: 20px !important;
+    }
+}
+
+.task_form_sub_fields {
+    @media (max-width: 770px) {
+    	float: none !important;
+    	display: block;
+    }
+}

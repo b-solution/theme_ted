@@ -1,0 +1,37 @@
+@import url("../variables.less");
+@import url("../mixins.less");
+/*Styles for Redmine Helpdesk*/
+
+div.issue #ticket_data {
+    background: @query-form;
+    border-left: 1px solid @border-color;
+    border-right: 1px solid @border-color;
+    border-bottom: 1px solid @border-color;
+    font-size: 12px;
+    margin: 0;
+    padding: @GGW;
+    
+    .size {
+        margin-right: 8px;
+    }
+}
+
+.icon-email-spam,
+.icon-email-to,
+.icon-phone {
+    background-image: none !important;
+}
+
+#sidebar .small-card tr:nth-child(2) p {
+    padding-left: 57px;
+}
+
+p.journal_message {
+    padding-left: 40px;
+}
+
+table.list.issues {
+    .contact-info {
+        font-size: 11px;
+    }
+}

@@ -1,0 +1,23 @@
+@import url("../variables.less");
+@import url("../mixins.less");
+/* ------------ Styles for Redmine Finance plugin ------------ */
+
+table.list.operations {
+    th, td {
+        border-right: 1px solid @border-color;
+    }
+
+    .money,
+    td.income,
+    td.expense {
+        text-align: left !important;
+    }
+
+    td.description {
+        padding: @GGW 0 @GGW @GGW;
+        
+        .wiki {
+            padding: 0;
+        }
+    }
+}

@@ -1,0 +1,194 @@
+@import url("variables.less");
+@import url("mixins.less");
+
+@media all and (max-width: 899px) {
+  
+  #wrapper3 {
+  
+    /*----------------------------------------*\
+      A) BASIC MOBILE RESETS
+    \*----------------------------------------*/
+  
+    /*
+      apply natural border box, see: http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+      this helps us to better deal with percentages and padding / margin
+    */
+    *,
+    *:before,
+    *:after {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+  
+    #wrapper {
+      position: relative;
+      overflow-x: hidden; /* hide horizontal overflow */
+      max-width: 100%;
+    }
+  
+    #wrapper,
+    #wrapper2 {
+      margin: 0;
+    }
+  
+    /*----------------------------------------*\
+      B) HEADER & TOP MENUS
+    \*----------------------------------------*/
+  
+    #header {
+      width: 100%;
+      height: 50px; /* the height of our header on mobile */
+      min-height: 0;
+      margin: 0;
+      padding: 0 !important;
+      border: none;
+      background: @nav-color;
+      
+      /* Hide project name on mobile (project name is still visible in select menu) */
+      h1 {
+        display: none !important;
+      }
+      
+      /* reset #header a color for mobile toggle button */
+      a.mobile-toggle-button {
+        color: @text-color;
+        position: absolute;
+        right: 0;
+        top: 0;
+        color: @border-color;
+        border-left: 1px solid @border-color;
+      }
+      
+      /* the quick search within header holding search form and #project_quick_jump_box box*/
+      #quick-search {
+        float: none;
+        clear: none; /* there are themes which set clear property, this resets it */
+        max-width: 100%; /* reset max-width */
+        margin: 0;
+        background: inherit;
+        padding: 0;
+      }
+      
+      /* this represents the dropdown arrow to left of the mobile project menu */
+      .jump-box-arrow:before {
+        /* set a font-size in order to achive same result in different themes */
+        font-family: Verdana, sans-serif;
+        font-size: 2em;
+        line-height: 50px;
+    
+        position: absolute;
+        left: @GGW;
+        top: 0px;
+    
+        width: 2*@GGW;
+        padding: 0 0.5*@GGW;
+        /* achieve dropdwon arrow by scaling a caret character */
+        content: '^';
+        -webkit-transform: scale(1,-.8);
+            -ms-transform: scale(1,-.8);
+                transform: scale(1,-.8);
+        text-align: right;
+        pointer-events: none;
+    
+        opacity: 1;
+        
+        color: @text-color;
+        z-index: 999;
+      }
+      
+      /* styles for combobox within quick-search (#project_quick_jump_box) */
+      #quick-search select {
+        .box-sizing;
+        .rounded;
+        position: absolute;
+        top: 13px;
+        left: 0.5*@GGW;
+    
+        float: left;
+    
+        width: calc(~'100% - @{menu-button-width}');
+        width: -moz-calc(~'100% - @{menu-button-width}');
+        width: -webkit-calc(~'100% - @{menu-button-width}');
+        max-width: 100%;
+        height: 25px;
+      
+        color: @text-color;
+        border: 0;
+        
+        background: @white;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        
+        /* hide default browser arrow */
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        
+        padding: 0 0 0 4*@GGW;
+        font-size: @BFS;
+        font-weight: normal;
+        display: block !important;
+      }
+      
+      #quick-search form {
+        display: none;
+      }
+    }  
+  
+    /* Hide top-menu and main-menu on mobile, because it's placed in our flyout menu */
+    #top-menu,
+    #header #main-menu {
+      display: none;
+    }
+  
+    /*----------------------------------------*\
+      C) MAIN CONTENT & SIDEBAR
+    \*----------------------------------------*/
+  
+    #main.nosidebar #content,
+    div#content {
+      width: 100%;
+      min-height: 0; /* reset min-height of #content */
+      margin: 0;
+    }
+  
+    /* hide sidebar and sidebar switch panel, since it's placed in mobile flyout menu */
+    #sidebar,
+    #sidebar-switch-panel {
+      display: none;
+    }
+    
+    /*
+    .splitcontentleft {
+      width: 100%;
+    }
+  
+    .splitcontentright {
+      width: 100%;
+    }
+    */
+    
+    #content > .contextual a.icon-edit {
+      .rounded;
+      .gradient-orange;
+      .btn;
+      padding: 0 5*@GGW !important;
+      line-height: 1.5*@BLH !important;  
+      text-align: center;  
+    }
+    
+    #content > .contextual a, p.buttons a {
+      font-weight: normal;
+      border: none;
+      margin: 0;
+      padding: 0 0.5*@GGW;
+    }
+    
+    #content > .contextual {
+      width: auto;
+    }
+    
+    
+  } /* ---------- end .redmine_mobile_menu ---------- */
+
+}

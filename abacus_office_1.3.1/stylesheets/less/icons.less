@@ -1,0 +1,1316 @@
+@import url("variables.less");
+@import url("mixins.less");
+/* ==========================================================================
+   General FA declaration
+   ========================================================================== */
+
+.fa:before {
+    font-size: 16px !important;
+    color: @icon-color;
+    margin-right: 8px;
+    -webkit-font-smoothing: grayscale !important;
+    -moz-osx-font-smoothing: grayscale !important;
+}
+
+.fa {
+    font-family: @font-family-base !important;
+    -webkit-font-smoothing: subpixel-antialiased !important;
+    -moz-osx-font-smoothing: auto !important;
+    font-smooth: auto !important;
+}
+
+/*
+ * General declaration
+ */
+
+#header #main-menu li a.new-issue,
+#quick-search label a,
+.toggle-multiselect,
+a.remove-upload,
+#account .icon-stop,
+.icon-start,
+.contextual .icon-stop,
+.checklist-item span.icon-add,
+.icon.found.icon-checked,
+.icon.unknown,
+.icon.found.icon-warning,
+#rdb-refresh,
+.rdb-checkbox-link,
+#rdb-reset,
+#rdb-option-fullscreen,
+.sort-handle,
+#admin-menu a,
+tr.issue.idnt td.subject a,
+#deal_contact_id_add_link,
+#expense_contact_id_add_link,
+#invoice_contact_id_add_link,
+.icon-order-add,
+#top-menu #loggedas > a,
+#account,
+.icon-user,
+span.search_for_watchers a,
+.icon-add,
+span.add_attachment a,
+a#attach_files_link,
+#add_issue_link,
+#contact_projects .contextual a,
+#sidebar #watchers .contextual a,
+#deal_contacts .contextual a,
+#contact_issues .contextual a,
+#sidebar #accounts_stat .contextual a,
+div.projects h3,
+div.news h3,
+.my-project,
+.icon-fav-off,
+.icon-fav,
+tr span.expander,
+#commit-keywords td.buttons a.delete-commit-keywords,
+#commit-keywords td.buttons a.add-commit-keywords,
+.icon-test,
+.icon-file,
+.icon-file.text-plain,
+.icon-file.text-x-csharp,
+.icon-file.text-x-c,
+.icon-file.text-x-java,
+.icon-file.text-x-javascript,
+.icon-file.text-x-php,
+.icon-file.text-x-ruby,
+.icon-file.text-xml,
+.icon-file.text-css,
+.icon-file.text-html,
+.icon-file.image-gif,
+.icon-file.image-jpeg,
+.icon-file.image-png,
+.icon-file.image-tiff,
+.icon-file.application-pdf,
+.icon-file.application-zip,
+.icon-file.application-x-gzip,
+.icon-folder,
+dt.issue-note,
+dt.issue-edit,
+dt.issue-closed,
+dt.issue-note,
+#search-results dt.issue.closed,
+dt.icon-add-deal,
+dt.time-entry,
+dt.changeset,
+dt.news,
+dt.message,
+dt.reply,
+dt.attachment,
+.icon-passwd,
+.icon-email-add,
+a.atom,
+a.csv,
+a.pdf,
+a.vcf,
+a.xls,
+#admin-menu a.agile,
+.icon-fullscreen,
+a.eq-pin,
+.icon-dmsf-lock,
+.icon-notification-off,
+.icon-notification-on,
+.ui-icon-circle-plus,
+.ui-icon-circle-arrow-e,
+.ui-icon-circle-close,
+.controller-dmsf #content > .contextual .icon-link,
+.icon-calendar,
+.gantt-menu-button.save,
+.gantt-menu-button.icon-back,
+.gantt-menu-button.icon-stats,
+.gantt-menu-button.icon-print,
+.starting > a,
+.ending > a,
+.starting.ending > a,
+.legend .ending,
+.legend .starting,
+.icon-del,
+#all_attributes p:nth-of-type(5) a,
+.icon-checked,
+.icon-save,
+#query_form .buttons a:nth-child(2),
+.icon-lock,
+.icon-unlock,
+.icon-time-add,
+#content>.contextual a.icon-fav-off,
+.icon-copy,
+.icon-comment,
+#issue_tree .contextual a,
+#relations .contextual a,
+.icon-link-break,
+.icon-call,
+.icon-meeting,
+.icon-duplicate,
+.icon-import,
+.icon-email,
+.icon-pdf,
+.icon-add-payment,
+.icon-invoice-public-link,
+div.members h3,
+div.spent_time h3,
+div.issues h3,
+.tabs-buttons .tab-left,
+.tabs-buttons .tab-right,
+.icon-refresh,
+.icon-settings,
+.icon-page,
+.icon-snippet,
+.icon-menu,
+.icon-layout,
+.icon-redmine-layout,
+.icon-redmine-hooks,
+.icon-redirect,
+.icon-package,
+.icon-vars,
+.icon-edit,
+.icon-group,
+.icon-issue,
+.icon-time,
+.icon-close,
+.icon-reload,
+.delete {
+    &:before {
+        font-size: 16px !important;
+        margin-right: 8px;
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        color: @icon-color;
+    }
+}
+
+/*
+ * Top Menu and JS Menu declaration
+ */
+
+#top-menu,
+.js-general-menu {
+    a.home, a.my-page, a.projects, a.issues, a.spent_time, a.administration, a.help, a.contacts, a.time-tracker-main-menu, a.icon-pause-action, a.questions, a.finance, a.products, a.orders, a.archived-repositories, a.invoices, a.expenses, a.people, a.deals, a.agile, a.easy-gantt, a.tags {
+        &:before {
+            margin-right: 8px;
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: inherit;
+            text-rendering: auto;
+        }
+    }
+}
+
+/* ==========================================================================
+   Hide background images
+   ========================================================================== */
+
+.fa,
+.fa.icon,
+.controller-sprints .contextual .icon,
+.controller-product_backlog .contextual .icon,
+#rdb-refresh,
+.rdb-checkbox-link,
+#rdb-reset,
+#rdb-option-fullscreen,
+.icon-call,
+.icon-meeting,
+.icon-import,
+.icon-email,
+.icon-pdf,
+.icon-add-payment,
+.icon-invoice-public-link,
+.icon-refresh,
+.icon-settings,
+.icon-page,
+.icon-snippet,
+.icon-menu,
+.icon-layout,
+.icon-redmine-layout,
+.icon-redmine-hooks,
+.icon-redirect,
+.icon-package,
+.icon-vars,
+.icon-fullscreen,
+.controller-repositories [class^="icon"]  {
+    background-image: none !important;
+}
+
+/* ==========================================================================
+   Add icon - plus circle
+   ========================================================================== */
+
+span.search_for_watchers a,
+.icon-add,
+span.add_attachment a,
+a#attach_files_link,
+#add_issue_link,
+#contact_projects .contextual a,
+#sidebar #watchers .contextual a,
+#deal_contacts .contextual a,
+#contact_issues .contextual a,
+#sidebar #accounts_stat .contextual a,
+#issue_tree .contextual a,
+#relations .contextual a {
+    
+    &:before {
+        .transition;
+        content: "\f055";
+        color: @green;
+    }
+
+    &:hover:before,
+    &:focus:before,
+    &:active:before {
+        .rotate;
+    }
+}
+
+/*
+ * Admin menu
+ * divided from the preceding code because there has to be left padding 0
+ */
+
+#admin-menu a.sidebar,
+#admin-menu a.projects,
+#admin-menu a.users,
+#admin-menu a.groups,
+#admin-menu a.roles,
+#admin-menu a.trackers,
+#admin-menu a.issue_statuses,
+#admin-menu a.issue-statuses,
+#admin-menu a.workflows,
+#admin-menu a.custom_fields,
+#admin-menu a.custom-fields,
+#admin-menu a.enumerations,
+#admin-menu a.settings,
+#admin-menu a.server_authentication,
+#admin-menu a.server-authentication,
+#admin-menu a.ldap-authentication,
+#admin-menu a.agile,
+#admin-menu a.contacts,
+#admin-menu a.helpdesk,
+#admin-menu a.invoices,
+#admin-menu a.finance,
+#admin-menu a.login-audit,
+#admin-menu a.people,
+#admin-menu a.products,
+#admin-menu a.plugins,
+#admin-menu a.info,
+#admin-menu a.redmine-git-hosting,
+#admin-menu a.cm-menu,
+#admin-menu a.approvalworkflows,
+#admin-menu a.cms,
+#admin-menu a.tags {
+    background-image: none !important;
+    padding-left: 0;
+}
+
+/* ==========================================================================
+   Hide img tag
+   ========================================================================== */
+
+.controller-documents .attachments p a:nth-child(2) img,
+.controller-wiki .attachments p a:nth-child(2) img,
+.time-entries td.buttons a:first-child img,
+.time-entries td.buttons a:last-child img,
+.edit_issue #all_attributes > p:nth-child(5) img,
+.delete img,
+.controller-reports h3 a img,
+table.list td.reorder a img,
+.controller-workflows form p a img,
+.controller-workflows.action-edit table.list img,
+#commit-keywords td.buttons a.add-commit-keywords img,
+#commit-keywords td.buttons a.delete-commit-keywords img,
+#history div.journal .wiki.editable .contextual a:first-child img,
+#history div.journal .wiki.editable .contextual a:last-child img,
+#deal_contact_id_add_link img,
+#expense_contact_id_add_link img,
+#invoice_contact_id_add_link img,
+#ticket_data .attachment a:last-child img,
+#relations tr.issue .buttons a img,
+.controller-messages .message.reply > .contextual a:nth-child(1) img,
+.controller-messages .message.reply > .contextual a:nth-child(2) img,
+.controller-messages .message.reply > .contextual a:nth-child(3) img,
+table.list.files td.buttons a img,
+.controller-wiki .contextual a:first-child img,
+.issue .attachments .contextual > a img,
+.message .attachments .contextual > a img,
+.controller-messages .message.reply > .contextual a:nth-child(4) img,
+#invoice_payments .contextual > a img,
+.controller-invoices #comments .contextual > a img,
+#content div.attachments .contextual > a img,
+#content #comments .contextual > a img {
+    display: none !important;
+}
+
+/* ==========================================================================
+   Top menu
+   ========================================================================== */
+/*
+ * Declare bg none for menu items that are covered below --> this will remove default bg img from items that FA is declared for
+ */
+
+#top-menu,
+.js-general-menu {
+    a.home, a.my-page, a.projects, a.issues, a.spent_time, a.administration, a.help, a.easy-gantt, a.contacts, a.time-tracker-main-menu, a.icon-pause-action, a.questions, a.finance, a.expenses, a.products, a.orders, a.archived-repositories, a.invoices, a.people, a.deals, a.agile, a.my-account, a.logout, #account a, a.tags {
+        background: none;
+    }
+}
+
+#top-menu > ul li a:before,
+#top-menu > ul.cm-menu-header li a:before {
+    margin-left: -2*@GGW;
+}
+
+#top-menu,
+.js-general-menu {
+    li a {
+        background: url("../../images/default-icon.png") no-repeat left center;
+    }
+
+    a.home:before {
+        content: "\f015";
+    }
+
+    a.my-page:before {
+        content: "\f0e4";
+    }
+
+    a.projects:before {
+        content: "\f03a";
+    }
+
+    a.issues:before {
+        content: "\f0ae";
+    }
+
+    a.spent_time:before {
+        content: "\f017";
+    }
+
+    a.administration:before {
+        content: "\f013";
+    }
+
+    a.help:before {
+        content: "\f1cd";
+    }
+
+    a.easy-gantt:before {
+        content: "\f1fe";
+    }
+
+    a.contacts:before {
+        content: "\f003";
+    }
+
+    a.time-tracker-main-menu:before,
+    a.icon-pause-action:before {
+        content: "\f04b";
+    }
+
+    a.help:before,
+    a.questions:before {
+        content: "\f1cd";
+    }
+
+    a.finance:before,
+    a.expenses:before {
+        content: "\f155";
+    }
+
+    a.products:before {
+        content: "\f06b";
+    }
+
+    a.orders:before {
+        content: "\f07a";
+    }
+
+    a.archived-repositories:before {
+        content: "\f187";
+    }
+
+    a.invoices:before {
+        content: "\f0f6";
+    }
+
+    a.people:before {
+        content: "\f0c0";
+    }
+
+    a.deals:before {
+        content: "\f0a4";
+    }
+
+    a.agile:before {
+        content: "\f009";
+    }
+    
+    a.tags:before {
+		content: "\f02b";
+	}
+}
+
+#top-menu ul a:before {
+    font-size: 16px;
+}
+
+tr.issue.idnt td.subject a:before {
+    content: "\f0da";
+    display: inline-block;
+}
+
+#deal_contact_id_add_link:before,
+#expense_contact_id_add_link:before,
+#invoice_contact_id_add_link:before {
+    content: "\f055";
+}
+
+#top-menu #loggedas > a:before {
+    content: "\f201";
+}
+
+#account:before,
+.icon-user:before {
+    content: "\f007";
+}
+
+/* ==========================================================================
+   Admin menu
+   ========================================================================== */
+
+#admin-menu,
+[class*="controller-"] #sidebar ul {
+    a.projects:before {
+        content: "\f03a";
+    }
+
+    a.users:before {
+        content: "\f007";
+    }
+
+    a.groups:before {
+        content: "\f0c0";
+    }
+
+    a.roles:before {
+        content: "\f1c0";
+    }
+
+    a.trackers:before {
+        content: "\f0c8";
+    }
+
+    a.issue_statuses:before,
+    a.issue-statuses:before {
+        content: "\f0f6";
+    }
+
+    a.workflows:before {
+        content: "\f0a4";
+    }
+
+    a.custom_fields:before,
+    a.custom-fields:before {
+        content: "\f152";
+    }
+
+    a.enumerations:before {
+        content: "\f0cb";
+    }
+
+    a.sidebar:before {
+        content: "\f0c9";
+    }
+
+    a.settings:before {
+        content: "\f013";
+    }
+
+    a.server_authentication:before,
+    a.ldap-authentication:before {
+        content: "\f084";
+    }
+
+    a.agile:before {
+        content: "\f009";
+    }
+
+    a.contacts:before {
+        content: "\f0e0";
+    }
+
+    a.helpdesk:before {
+        content: "\f1cd";
+    }
+
+    a.invoices:before {
+        content: "\f0f6";
+    }
+
+    a.finance:before {
+        content: "\f155";
+    }
+
+    a.login-audit:before {
+        content: "\f090";
+    }
+
+    a.people:before {
+        content: "\f0c0";
+    }
+
+    a.products:before {
+        content: "\f07a";
+    }
+
+    a.plugins:before {
+        content: "\f12e";
+    }
+
+    a.info:before {
+        content: "\f05a";
+    }
+
+    a.redmine-git-hosting:before {
+        content: "\f1d2";
+    }
+
+    a.cm-menu:before {
+        content: "\f022";
+    }
+
+    a.approvalworkflows:before {
+        content: "\f0f6";
+    }
+
+    a.cms:before {
+        content: "\f108";
+    }
+    
+    a.tags:before {
+    	content: "\f02b";
+    }
+}
+
+/* ==========================================================================
+   Plugin icons
+   ========================================================================== */
+
+/*Plugin Dashboard*/
+
+#rdb-refresh:before,
+#rdb-reset:before {
+    content: "\f021";
+}
+
+.rdb-checkbox-link:before {
+    content: "\f00c";
+    color: @icon-color;
+}
+
+.rdb-checkbox-link.rdb-checkbox-link-enabled:before {
+    color: @green;
+}
+
+#rdb-option-fullscreen:before {
+    content: "\f0b2";
+}
+
+.sort-handle:before {
+    content: "\f07d";
+}
+
+.icon.found.icon-checked:before {
+    content: "\f00c";
+    font-size: 16px;
+    color: @green;
+}
+
+.icon.unknown:before {
+    content: "\f059";
+    font-size: 16px;
+    color: @blue;
+}
+
+.icon.found.icon-warning:before {
+    content: "\f071";
+    font-size: 16px;
+    color: @orange;
+}
+
+.icon-checked:before {
+    content: "\f00c";
+}
+
+.icon-save:before {
+    content: "\f0c7";
+}
+
+/*Plugin Products*/
+
+.icon-order-add:before {
+    content: "\f217";
+}
+
+/*My Page*/
+
+div.projects h3:before {
+    content: "\f03a";
+}
+
+div.news h3:before {
+    content: "\f1ea";
+}
+
+div.members h3:before {
+    content: "\f0c0";
+}
+
+div.spent_time h3:before {
+    content: "\f017";
+}
+
+div.issues h3:before {
+    content: "\f0ae";
+}
+
+/*Favourite icon - star*/
+
+.my-project:before,
+.icon-fav-off_before,
+.icon-fav:before {
+    content: "\f005";
+    color: @orange;
+}
+
+ul.projects ul.projects .icon-fav:before {
+    font-size: 12px !important;
+}
+
+tr span.expander:before {
+    content: "\f0fe";
+}
+
+#commit-keywords td.buttons a.add-commit-keywords:before {
+    content: "\f055";
+}
+
+.icon-test:before {
+    content: "\f061";
+}
+
+/*File icons*/
+
+.icon-file,
+.icon-file.text-plain,
+.icon-file.text-x-csharp,
+.icon-file.text-x-c,
+.icon-file.text-x-java,
+.icon-file.text-x-javascript,
+.icon-file.text-x-php,
+.icon-file.text-x-ruby,
+.icon-file.text-xml {
+    &:before {
+        content: "\f15b";
+    }
+}
+
+.icon-file.text-css:before {
+    content: "\f13c";
+}
+
+.icon-file.text-html:before {
+    content: "\f13b";
+}
+
+.icon-file.image-gif,
+.icon-file.image-jpeg,
+.icon-file.image-png,
+.icon-file.image-tiff {
+    &:before {
+        content: "\f1c5";
+    }
+}
+
+.icon-file.application-pdf:before {
+    content: "\f1c1";
+}
+
+.icon-file.application-zip:before,
+.icon-file.application-x-gzip:before {
+    content: "\f1c6";
+}
+
+/*File icons*/
+
+.icon-folder:before {
+    content: "\f114";
+}
+
+/*Users*/
+
+dt.issue-note,
+dt.issue-edit,
+dt.issue-closed,
+dt.issue-note,
+#search-results dt.issue.closed {
+    &:before {
+        content: "\f0f6";
+    }
+}
+
+dt.icon-add-deal:before {
+    content: "\f0d6";
+}
+
+dt.time-entry:before,
+.icon-time-add:before {
+    content: "\f017";
+}
+
+dt.changeset:before {
+    content: "\f013";
+}
+
+dt.news:before {
+    content: "\f1ea";
+}
+
+dt.message,
+dt.reply:before,
+.icon-comment:before {
+    content: "\f075";
+}
+
+dt.attachment:before {
+    content: "\f0c6";
+}
+
+.icon-passwd:before {
+    content: "\f084";
+}
+
+.icon-email-add:before {
+    content: "\f003";
+}
+
+/*Footer*/
+
+a.atom:before {
+    content: "\f143";
+}
+
+a.csv:before {
+    content: "\f1c0";
+}
+
+a.pdf:before {
+    content: "\f1c1";
+}
+
+a.vcf:before {
+    content: "\f007";
+}
+
+a.xls:before {
+    content: "\f1c3";
+}
+
+/*Agile*/
+
+#admin-menu a.agile:before {
+    content: "\f009";
+}
+
+.icon-fullscreen:before {
+    content: "\f0b2";
+}
+
+/*Extra queries*/
+
+a.eq-pin:before {
+    content: "\f006";
+}
+
+/*DMSF plugin*/
+
+.icon-dmsf-lock:before {
+    content: "\f023";
+}
+
+.icon-notification-off:before {
+    content: "\f0e0";
+}
+
+.icon-notification-on:before {
+    content: "\f003";
+}
+
+.ui-icon-circle-plus:before {
+    content: "\f055";
+}
+
+.ui-icon-circle-arrow-e:before {
+    content: "\f093";
+}
+
+.ui-icon-circle-close:before {
+    content: "\f057";
+}
+
+.controller-dmsf #content > .contextual .icon-link:before {
+    content: "\f08e";
+    font-size: 14px !important;
+}
+
+/*Easy Gantt plugin*/
+
+.icon-calendar:before {
+    content: "\f073";
+}
+
+.gantt-menu-button.save:before {
+    content: "\f0c7";
+}
+
+.gantt-menu-button.icon-back:before {
+    content: "\f060";
+}
+
+.gantt-menu-button.icon-stats:before {
+    content: "\f007";
+}
+
+.gantt-menu-button.icon-print:before {
+    content: "\f02f";
+}
+
+.icon-del:before,
+#query_form .buttons a:nth-child(2):before,
+a.remove-upload:before,
+#commit-keywords td.buttons a.delete-commit-keywords:before,
+.icon-close:before,
+.delete:before {
+    .transition;
+    content: "\f00d";
+    color: @red !important;
+}
+
+.icon-del:hover:before {
+    .rotate;
+    position: relative;
+    top: 1px;
+}
+
+/* Calendar */
+
+.starting > a:before,
+.legend span.starting:before {
+    content: "\f0a9";
+    color: @green;
+}
+
+.ending > a:before,
+.legend span.ending:before {
+    content: "\f0a8";
+    color: @red;
+}
+
+.ending.starting > a:before,
+.legend span.ending.starting:before {
+    content: "\f140";
+    color: @red;
+}
+
+#all_attributes p:nth-of-type(5) {
+    /*
+    a:before {
+        content: "\f044";
+        color: @orange;
+    }
+    */
+
+    .icon {
+        padding-left: 0 !important;
+    }
+}
+
+/* Project view */
+
+.icon-lock:before {
+    content: "\f023";
+}
+
+.icon-unlock:before {
+    content: "\f09c";
+}
+
+#content>.contextual a.icon-fav-off:before {
+    content: "\f06e";
+}
+
+.icon-copy:before,
+.icon-duplicate:before {
+    content: "\f0c5";
+}
+
+tr.context-menu-selection:hover a.icon-link-break:before {
+    content: "\f127";
+}
+
+/* Redmine CRM */
+
+.icon-call:before {
+    content: "\f10b";
+}
+
+.icon-meeting:before {
+    content: "\f073";
+}
+
+.icon-import {
+    content: "\f063";
+}
+
+.icon-email:before {
+    content: "\f0e0";
+}
+
+.icon-pdf:before {
+    content: "\f1c1";
+}
+
+.icon-add-payment:before {
+    content: "\f155";
+}
+
+.icon-invoice-public-link:before {
+    content: "\f08e";
+}
+
+.tabs-buttons .tab-left:before {
+    content: "\f0d9";
+    margin: auto;
+}
+
+.tabs-buttons .tab-right:before {
+    content: "\f0da";
+    margin: auto;
+}
+
+.icon-refresh:before,
+.icon-reload:before {
+    content: "\f021";
+}
+
+.icon-settings:before {
+    content: "\f013";
+}
+
+.icon-page:before {
+    content: "\f016";
+}
+
+.icon-snippet:before {
+    content: "\f1c9";
+}
+
+.icon-menu:before {
+    content: "\f03a";
+}
+
+.icon-layout:before {
+    content: "\f009";
+}
+
+.icon-redmine-layout:before {
+    content: "\f00a";
+}
+
+.icon-redmine-hooks:before {
+    content: "\f121";
+}
+
+.icon-redirect:before {
+    content: "\f08e";
+}
+
+.icon-package:before {
+    content: "\f1b2";
+}
+
+.icon-vars:before {
+   content: "\f0ac"; 
+}
+
+.icon-edit:before {
+    content: "\f044";
+    color: @orange;
+}
+
+.icon-group:before {
+    content: "\f0c0";
+}
+
+.icon-issue:before {
+    content: "\f0ae";
+}
+
+.icon-time:before {
+    content: "\f017";
+}
+
+
+
+
+/*New and edit issue: add plus icon and remove image */
+
+.edit_issue .splitcontentleft,
+.new_issue .splitcontentleft {
+    p + p + p {
+        a {
+            margin-right: 8px;
+            margin-top: 0.5*@GGW;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: inherit;
+            text-rendering: auto;
+            position: relative;
+            top: 2px;
+            text-decoration: none;
+        }
+		
+		a:focus {
+			outline: none;
+		}
+
+        img {
+            display: none;
+        }
+
+        a:before {
+            content: "\f055";
+            font-size: 16px;
+            color: @green !important;
+        }
+    }
+}
+
+#operation_form #operation_contact_id_add_link,
+#order_form #order_contact_id_add_link,
+.checklist-item span.icon-add {
+    margin-right: 8px;
+    margin-top: 0.5*@GGW;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    position: relative;
+    top: 4px;
+    text-decoration: none;
+    img {
+        display: none;
+    }
+
+    &:before {
+        content: "\f055";
+        font-size: 16px;
+        color: @green;
+    }
+
+}
+
+.checklist-item span.icon-add.icon {
+    padding-left: 0;
+}
+
+.checklist-item span.icon-add.icon:hover {
+    cursor: pointer;
+}
+
+#sidebar #watchers .delete img {
+    display: inline-block !important;
+}
+
+tr.issue.idnt td.subject a.fa:before {
+    margin-right: 8px !important;
+}
+
+.contextual .icon-stop:before,
+.contextual .icon-start:before {
+    font-size: 16px;
+}
+
+.icon-start,
+.icon-stop {
+    padding-left: 0 !important;
+}
+
+#account .icon-stop:before,
+.contextual .icon-stop:before {
+    content: "\f04d";
+    color: @icon-color;
+}
+
+#account .icon-stop:hover:before,
+.contextual .icon-stop:hover:before {
+    color: @red;
+}
+
+#account .icon-start:before,
+.contextual .icon-start:before {
+    content: "\f01d";
+    color: @green;
+}
+
+#account .icon-start:hover:before,
+.contextual .icon-start:hover:before {
+    color: @green;
+}
+
+#header #main-menu li a.new-issue:hover:before {
+    color: @green !important;
+}
+
+#header #main-menu li a.new-issue:before {
+    color: @white;
+}
+
+.icon-projects:before,
+.icon-package:before {
+    font-size: @BFS !important;
+}
+
+.toggle-multiselect:before {
+    content: "\f0fe";
+}
+
+/* ------------ Repositories ------------ */
+
+.controller-repositories {
+    .fa:before {
+        content: none;
+    }
+
+    .icon-folder {
+        background-image: url(../../../../images/folder.png);
+    }
+
+    .open .icon-folder {
+        background-image: url(../../../../images/folder_open.png);
+    }
+
+    .icon-file {
+        background-image: url(../../../../images/files/default.png);
+    }
+
+    .icon-file.text-plain {
+        background-image: url(../../../../images/files/text.png);
+    }
+
+    .icon-file.text-x-c {
+        background-image: url(../../../../images/files/c.png);
+    }
+
+    .icon-file.text-x-csharp {
+        background-image: url(../../../../images/files/csharp.png);
+    }
+
+    .icon-file.text-x-java {
+        background-image: url(../../../../images/files/java.png);
+    }
+
+    .icon-file.text-x-javascript {
+        background-image: url(../../../../images/files/js.png);
+    }
+
+    .icon-file.text-x-php {
+        background-image: url(../../../../images/files/php.png);
+    }
+
+    .icon-file.text-x-ruby {
+        background-image: url(../../../../images/files/ruby.png);
+    }
+
+    .icon-file.text-xml {
+        background-image: url(../../../../images/files/xml.png);
+    }
+
+    .icon-file.text-css {
+        background-image: url(../../../../images/files/css.png);
+    }
+
+    .icon-file.text-html {
+        background-image: url(../../../../images/files/html.png);
+    }
+
+    .icon-file.image-gif {
+        background-image: url(../../../../images/files/image.png);
+    }
+
+    .icon-file.image-jpeg {
+        background-image: url(../../../../images/files/image.png);
+    }
+
+    .icon-file.image-png {
+        background-image: url(../../../../images/files/image.png);
+    }
+
+    .icon-file.image-tiff {
+        background-image: url(../../../../images/files/image.png);
+    }
+
+    .icon-file.application-pdf {
+        background-image: url(../../../../images/files/pdf.png);
+    }
+
+    .icon-file.application-zip {
+        background-image: url(../../../../images/files/zip.png);
+    }
+
+    .icon-file.application-x-gzip {
+        background-image: url(../../../../images/files/zip.png);
+    }
+}
+
+@media (max-width: 560px) {
+    #header #main-menu li a.new-issue:before {
+        content: "\f067";
+    }
+
+    #quick-search label a:before {
+        content: "\f002";
+        font-size: 16px !important;
+        color: @icon-color;
+        line-height: 40px;
+    }
+
+    #main-menu:before {
+        display: inline-block;
+        font: normal normal normal 30px/1 FontAwesome !important;
+        color: @nav-color;
+        font-size: inherit;
+        text-rendering: auto;
+        margin: 6px 0 0 12px;
+        content: "\f039";
+        cursor: pointer;
+    }
+}
+
+/* ==========================================================================
+   Assorted
+   ========================================================================== */
+
+.icon-only,
+#wrapper .icon-only {
+    color: transparent !important;
+    width: 16px !important;
+    font-size: 0 !important;
+}
+
+.icon-only:before {
+	margin-right: 0;
+}
+
+.controller-wiki #content > .contextual .icon-edit:before {
+	content: none;
+}

@@ -1,0 +1,92 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+//== Custom variables
+//
+
+
+@white:                    #fff;
+@black:                    @gray-base;
+@border-color:             #e6eaef;
+@border-color-gray:        #e7e7e7;
+@template-color-primary:   #4aa3b3; // blue 
+@template-color-secondary: #8dc53e; // green
+@link-color:               @template-color-primary;
+@text-color:               #666666;
+@link-hover-color:         darken(@link-color, 10%);
+@grid-gutter-width:        0.5*(@font-size-base *@line-height-base);
+
+
+//** Custom colors
+@green:                    #2da948;
+@orange:                   #df8b3b;
+@orange-light:             #f66914;
+@yellow:                   #ffc156;
+@red:                      #df4b3b;
+@blue:                     @template-color-primary;
+@changeset-color:          lighten(@highlight,17%);
+@icon-color:               darken(@text-color,10%);
+
+//** Highlight
+@highlight:                #FCFD8D;
+@highlight-purple:         #bfbbfb;
+@highlight-blue:           #f0f8fb;
+
+@nav-color:                #243133;
+@query-form:               #f4f7f8;
+
+@flash-default:            #d6dade;
+@flash-info:               #c3eff7;
+@flash-error:              lighten(@red,30%);
+@flash-notice:             lighten(@green,30%);
+@flash-warning:            lighten(@orange,30%);
+
+//** Custom variable abbreviations
+@BLH:                      @line-height-base;
+@GGW:                      @grid-gutter-width;
+@BFS:                      @font-size-base;
+@TCS:                      @template-color-secondary;
+@TCP:                      @template-color-primary; 
+
+
+//== Priorities
+//
+
+
+@priority-low:             #80e1d3;
+@priority-default:         #ffffff;
+@priority-high:            #fdc5a4;
+@priority-urgent:          #ea0157;
+@priority-immediate:       #ea0157;
+
+
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+
+
+@gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+
+@font-family-sans-serif:  "Open Sans", Arial, sans-serif;
+@font-family-base:        @font-family-sans-serif;
+@font-size-base:          13px;
+@line-height-base:        1.5; 
+
+//** By default, this inherits from the `<body>`.
+@headings-font-family:    inherit;
+@headings-color:          #4f5257;
+@menu-button-width:       72px;

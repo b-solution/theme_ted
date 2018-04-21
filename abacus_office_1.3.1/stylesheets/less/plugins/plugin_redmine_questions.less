@@ -1,0 +1,52 @@
+@import url("../variables.less");
+@import url("../mixins.less");
+/*Styles for Redmine Q&A plugin*/
+
+div.message.reply .contextual .icon.vote {
+    position: static !important;
+}
+
+#query_form input.questions-search {
+    .rounded;
+    border: none;
+    height: 3*@GGW;
+    padding: 0 @GGW;
+    color: @gray;
+    -webkit-appearance: none;
+}
+
+.controller-boards,
+.controller-questions {
+    form#query_form {
+        padding-bottom: 2*@GGW;
+    }
+}
+
+#content .board {
+    h2 {
+        font-size: 1.4*@BFS;
+        margin: 0 0 @GGW 0;
+        padding: 0;
+    }
+
+    .contextual a {
+        padding: 0 0.5*@GGW;
+        float: none !important;
+        display: inline-block !important;
+    }
+}
+
+#topics_list {
+    .topic {
+        padding: 2*@GGW 0;
+        border-bottom: 1px solid @border-color;
+    }
+
+    .topic p {
+        margin: 0 0 @GGW 0;
+    }
+
+    .topic h3.subject {
+        margin: @GGW 0 ((1.5*@BFS * 1.2) - @GGW) 0 !important;
+    }
+}

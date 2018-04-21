@@ -1,0 +1,188 @@
+/* BoostMine Theme version 1.4, Copyright (C) 2017 Luis Blasco www.bestredminetheme.com */
+
+/**********************************************************/
+/* FAVICON */
+/**********************************************************/
+
+/* Just replace file called "favicon.ico" in the "favicon" folder */
+
+
+/**********************************************************/
+/* LOGIN BACKGROUND */
+/**********************************************************/
+
+.action-login #wrapper, .action-register #wrapper, .action-lost_password #wrapper {
+	background: url(background-login-1.jpg) no-repeat;      /* Desk Office */
+	/*background: url(background-login-2.jpg) no-repeat;*/     /* Foggy Forest */
+	/*background: url(background-login-3.jpg) no-repeat;*/     /* Green Leaves */
+	/*background: url(background-login-4.jpg) no-repeat;*/      /* Rocky Sea */
+	/*background: url(background-login-5.jpg) no-repeat;*/      /* Water in Pool */ 
+	/*background: url(background-login-6.jpg) no-repeat;*/      /* Foggy Lake */
+	/*background: url(background-login-7.jpg) no-repeat;*/      /* Forest Bridge */
+	/*background: url(background-login-8.jpg) no-repeat;*/      /* Lightning Highway */
+	/*background: url(background-login-9.jpg) no-repeat;*/      /* Star sky */
+	/*background: url(background-login-10.jpg) no-repeat;*/      /* Raining Day */
+	/*background: url(background-login-11.jpg) no-repeat;*/      /* Dunes */
+	/*background: url(background-login-12.jpg) no-repeat;*/      /* Jungle Bridge */
+	/*background: url(background-login-13.jpg) no-repeat;*/      /* Sea Bridge */
+	/*background: url(background-login-14.jpg) no-repeat;*/      /* Deep Space */
+	/*background: url(background-login-15.jpg) no-repeat;*/      /* Foggy Montains */
+	/*background: url(background-login-16.jpg) no-repeat;*/      /* Blurry */	
+	/*background: url(background-login-17.jpg) no-repeat;*/      /* Lonely Jellyfish */
+
+    /*background: url(background-yourimage.jpg) no-repeat;*/      /* YOUR OWN IMAGE */ /* You will have to include your image in /boostmine/images/ folder */	
+}
+
+/**********************************************************/
+/* LOGIN FORM SHAPE */
+/**********************************************************/
+
+/* If you want the login form to have a colored background instead of transparent, just add an Hex color value in "background-color". If you need also change it for labels use the "color" value */
+
+
+.action-login #login-form, .action-register .box, .action-lost_password .box{
+	background-color: transparent;
+	color: #FFFFFF;
+}
+
+/*.action-login #login-form input[type=text], .action-login #login-form input[type=password]{
+	 color: #000000 !important;
+}*/
+
+
+/**********************************************************/
+/* LOGOS */
+/**********************************************************/
+
+/* You can use two logos, one for the login/register page and another one for the header
+/* Recommended size for login/register logo: 235 x 120 px
+/* Recommended size for header logo: 74 x 74 px */
+
+
+#header {
+	background-image: url(logo-headers.png);
+}
+
+.action-login #header:after, .action-register #header:after, .action-lost_password #header:after {
+	content: url(logo-login.png);
+}
+
+
+/**********************************************************/
+/* FONTS */
+/**********************************************************/
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,600,600i,700,700i,800,800i');
+
+:root {
+	--font: "Raleway", sans-serif;
+	--font2: "Roboto", sans-serif;
+}
+
+
+/**********************************************************/
+/* COLORS */
+/**********************************************************/
+
+:root {
+	/* Header Color */
+	--header_hue: 210; /* From 0 to 360 degrees*/ /* Default 210 */
+	--header_saturation: 20%; /* From 0 to 100 percent */ /* Default 20% */
+	--header_brightness: 48%; /* From 0 to 100 percent */ /* Default 48% */
+	
+	/* Elements Color */
+	--hue: 210; /* From 0 to 360 degrees*/ /* Default 210 */
+	--saturation: 20%; /* From 0 to 100 percent */ /* Default 20% */
+	--brightness: 48%; /* From 0 to 100 percent */ /* Default 48% */
+
+}
+
+/*
+Recommended colors for Header or Elements:
+
+Redmine Classic Header (h:211/s:34%/b:48%)
+Redmine Classic Elements (h:208/s:30%/b:35%)
+
+Almond (h:45/s:20%/b:50%)
+AppleGreen (h:105/s:50%/b:50%)
+BlueCheese (h:185/s:50%/b:50%)
+BlueRaspberry (h:200/s:70%/b:50%)
+Blueberry (h:220/s:70%/b:50%)
+Butter (h:40/s:75%/b:50%)
+Coral (h:5/s:70%/b:50%)
+ElectricBlue (215/s:70%/b:50%)
+Granberry (h:/s:65%/b:50%)
+Grape (h:260/s:60%/b:50%)
+Grey: (h:0/s:0%/b:50%)
+Lime (h:70/s:45%/b:50%)
+Mushroom: (h:0/s:12%/b:50%)
+Mustard (h:40/s:60%/b:50%)
+Orchid (h:325/s:50%/b:50%)
+Pistachio (h:110/s:25%/b:50%)
+Raspberry (h:340/s:60%/b:50%)
+Watercress (h:180/40%/b:50%)
+Tomato (h:0/s:65%/b:50%)
+*/
+
+
+/**********************************************************/
+/* TRACKERS COLOR */
+/**********************************************************/
+
+/* If you want to change the tracker colors, just change the hex codes in the following table */
+
+
+:root {		
+	--tracker_1: #e8863e;
+	--tracker_2: #56c559;
+	--tracker_3: #238ed8;
+	--tracker_4: #b462de;
+	--tracker_5: #b462de;
+	--tracker_6: #b462de;
+	--tracker_7: #b462de;
+	--tracker_8: #b462de;
+	--tracker_9: #b462de;
+	--tracker_10: #b462de;
+}
+
+/**********************************************************/
+/* PRIORITY COLOR */
+/**********************************************************/
+
+/* If you want to change the priority colors, just change the hex codes in the following table */
+
+
+:root {		
+	--low: #e5fff2;
+	--high: #fdfff0;
+	--urgent: #fff7e5;
+	--immediate: #ffe5e5;	
+}
+
+
+/**********************************************************/
+/* WELCOME PAGE */
+/**********************************************************/
+
+/* If you want the Welcome page and icon to be shown, just comment the second line */
+
+#top-menu ul li:nth-child(1), .js-general-menu ul li:nth-child(1) {
+	display:none;
+}
+
+
+/**********************************************************/
+/* STICKY HEADER */
+/**********************************************************/
+
+/* If you want the header to be fixed instead of sticky, just comment the second line to remove the sticky header */
+
+:root {
+	--sticky: true;	
+}
+
+
+
+
+

@@ -1,0 +1,24 @@
+@import url("../variables.less");
+@import url("../mixins.less");
+/*Styles for Sidebar Hide plugin*/
+
+.view-admin {
+    #main #content.sidebar_hidden {
+        width: auto;
+        float: none;
+    }
+
+    #sidebarHandler {
+        left: -8px;
+        right: unset !important;
+        float: left !important;
+        margin-right: 0 !important;
+        #hideSidebarButton {
+            background-image: url("../../images/buttons.png");
+        }
+    }
+
+    .sidebar_hidden #sidebarHandler {
+        left: 0;
+    }
+}

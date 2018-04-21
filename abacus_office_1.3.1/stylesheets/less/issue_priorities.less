@@ -1,0 +1,56 @@
+@import url("variables.less");
+@import url("mixins.less");
+/*Priorities*/
+/*----------------- Low -----------------*/
+
+table.list tr.priority-lowest td:first-child {
+    background: url(../../images/priority1.png) no-repeat left center;
+}
+
+/*----------------- Normal -----------------*/
+
+table.list tr.priority-default td:first-child {
+    background: url(../../images/priority2.png) no-repeat left center;
+}
+
+/*----------------- High -----------------*/
+
+table.list tr.priority-high3 td:first-child {
+    background: url(../../images/priority3.png) no-repeat left center;
+}
+
+/*----------------- Urgent -----------------*/
+
+table.list tr.priority-high2 td:first-child {
+    background: url(../../images/priority4.png) no-repeat left center;
+}
+
+/*----------------- Immediate -----------------*/
+
+table.list tr.priority-highest {
+    background: lighten(@red, 40%);
+}
+
+table.list tr.priority-highest td:first-child {
+    background: url(../../images/priority4.png) no-repeat left center;
+}
+
+.cal a.priority-lowest {
+    color: @orange;
+}
+
+.cal a.priority-default {
+    color: inherit;
+}
+
+.cal a.priority-high3 {
+    color: lighten(@red, 20%);
+}
+
+.cal a.priority-high2 {
+    color: @red;
+}
+
+.cal a.priority-highest {
+    color: darken(@red, 20%);
+}

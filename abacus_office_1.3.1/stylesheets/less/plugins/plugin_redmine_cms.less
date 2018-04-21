@@ -1,0 +1,88 @@
+@import url("../variables.less");
+@import url("../mixins.less");
+
+/* ------------ Styles for Redmine CMS plugin ------------ */
+#top-menu {
+    #account.cms > ul > li {
+        height: auto !important;
+    }
+
+    #account.cms > ul > li ul {
+        border: none;
+    }
+
+    #account.cms a:hover:before {
+        color: @icon-color !important;
+    }
+
+    #account:hover .menu-children,
+    #account:focus .menu-children {
+        display: block;
+    }
+
+    ul.menu-children > li {
+        padding: 0 !important;
+    }
+    
+    /*Redmine CMS Styles*/
+    
+    > ul a:hover + ul.menu-children,
+    > ul a + ul.menu-children:hover {
+        display: block !important;
+    }
+    
+    > ul a + ul.menu-children {
+        .rounded;
+        display: block;
+        margin: 0;
+        padding: @GGW;
+        top: 41px !important;
+        
+        li {
+            border-bottom: none;
+            margin: 0;
+            line-height: 30px;
+        }
+        
+        a:hover:before {
+            color: lighten(@nav-color, 40%);
+        }
+    }
+    
+    > ul a + ul.menu-children:after,
+    > ul a + ul.menu-children:before {
+    	bottom: 100%;
+        left: 22px;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        }
+    
+    > ul a + ul.menu-children:after {
+        border-color: rgba(255, 255, 255, 0);
+        border-bottom-color: @white;
+        border-width: 8px;
+        margin-left: -8px;
+    }
+    
+    > ul a + ul.menu-children:before {
+        border-color: rgba(231, 231, 231, 0);
+        border-bottom-color: #e7e7e7;
+        border-width: 8px;
+        margin-left: -8px;
+    }
+}
+
+#wrapper #cms-settings-menu a {
+    line-height: 2.5;
+}
+
+.controller-cms_pages.action-index {
+    
+    #content > .contextual {
+        margin: @GGW;
+    }
+}

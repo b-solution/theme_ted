@@ -1,0 +1,41 @@
+/* BoostMine Theme version 1.4, Copyright (C) 2017 Luis Blasco www.bestredminetheme.com */
+
+/**********************************************************/
+/* IE11 */
+/**********************************************************/
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+
+	select::-ms-expand {
+		display: none;
+	}
+	
+	#quick-search label{
+		height: 23px;
+	}
+	
+	#quick-search #q{
+		height: 34px;
+	}
+	
+	.controller-activities dt.icon{
+		background-image: none;
+	}
+
+}
+
+/**********************************************************/
+/* FIREFOX */
+/**********************************************************/
+
+@-moz-document url-prefix() {
+
+	.admin.controller-custom_fields .splitcontentright fieldset, .admin.controller-users .splitcontentright fieldset, .admin.controller-users .splitcontentleft fieldset{
+     display:block !important;
+  }
+  
+   .admin.controller-custom_fields .splitcontentright fieldset legend{
+	   width:100% !important;
+   }
+  
+}

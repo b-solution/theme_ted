@@ -1,0 +1,976 @@
+/* BoostMine Theme version 1.4, Copyright (C) 2017 Luis Blasco www.bestredminetheme.com */
+
+
+@media screen and (min-width: 900px) and (max-width: 1700px){
+
+	.controller-favorite_projects .filters{
+		margin-top: 120px;
+	}	
+	
+}
+
+@media screen and (min-width: 900px) and (max-width: 1400px){	
+	
+	#top-menu #loggedas{
+		margin-right:0;
+		margin-left:-40px;
+	}
+	
+	#top-menu #loggedas +  ul{
+		overflow: hidden;
+	}
+
+	#top-menu #loggedas +  ul li{
+		padding: 4px 1.2% 5px 1.2%;
+	}	
+	
+}
+
+
+@media screen and (min-width: 1024px){
+	
+	.current-project, #header .breadcrumbs a{
+		/*width:50%;*/
+		width:100%;
+	}
+	
+}
+
+@media screen and (min-width: 1220px){
+	
+	.current-project{
+		/*width:59%;*/
+	}
+	
+}
+	
+
+@media screen and (min-width: 899px){	
+
+	 #quick-search select{
+		border-radius: 25px;
+		background: hsla(var(--header_hue),var(--header_saturation), var(--header_brightness7),1);
+		border: 0;
+		padding: 11px 46px 11px 20px;
+		color: #FFF;
+		height: initial;	
+		margin-right: 10px;
+		margin-top: -2px;
+		font-size: 13px;
+		background-image: url(../images/arrow-down2.png);
+		background-repeat: no-repeat;
+		background-position:94% center;
+		border:0px;
+	   outline:0px;
+		 appearance:none;
+		-moz-appearance:none; /* Firefox */
+		-webkit-appearance:none;	
+		cursor:pointer;
+		box-sizing: content-box;
+	}
+
+	#quick-search select:hover{	
+		background-image: url(../images/arrow-down.png);
+	}
+
+}
+
+
+@media screen and (max-width: 1024px){
+	
+	#sidebar a, #sidebar p label{
+		padding-left:0;
+		padding-right:0;		
+	}
+	
+	#sidebar li{
+		white-space: nowrap;
+	}
+	
+	#admin-index #admin-menu li{
+		margin:10px;
+	}
+	
+}
+
+@media screen and (max-width: 899px){
+	
+	body{
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+		-webkit-tap-highlight-color: transparent;
+	}
+	
+	h1, h2, h3, h4{
+		margin: 10px 0;
+	}
+	 #history h4{
+		margin: 0 0 10px 0; 
+	}
+	
+	form {
+		font-size: 12px !important;
+	}
+	
+	#content{
+		padding: 2%;		
+	}	
+
+	#content >  h2, #content >  h2 + p{
+		text-align: center;
+	}
+	
+	#content >.contextual{
+		text-align: center;
+	}
+	
+	body:not(.action-login) #content{
+		width: 100% !important;
+	}
+	
+	.tabular select{
+		width: 77% !important;
+	}
+	
+	.tabular label, .tabular.settings label{
+		font-weight: 500 !important;
+	}	
+	
+	#content .tabs ul li{
+		margin-right: 2px;
+	}
+	
+	div.flash.notice, #errorExplanation, .nodata, #errorExplanation + p, h2 ~ #errorExplanation{
+		margin-bottom: 30px;
+		width: 90%;
+	}
+	
+	input[type=submit], input[type=submit] + a{
+		float: none;
+		border-width: 2px !important;
+		padding: 10px 20px !important;
+	}		
+	
+	 fieldset input[type=submit]{
+		float: none !important;
+		padding: 10px 20px !important;
+	}
+
+	span.pagination .items{
+		float: none;
+	}
+	
+	html >  body #content{
+		min-height: 0;
+	}
+	
+	.pagination ul.pages li.current, .pagination ul.pages li.previous, .pagination ul.pages li.next{
+		width: initial !important;
+	}
+	
+	body:not(.controller-issues) #query_form{
+		margin-bottom: 20px !important;
+	}
+	
+	.flyout-menu h3, .flyout-menu h4, .flyout-menu > p, .flyout-menu > a, .flyout-menu ul li a, .flyout-menu__search, .flyout-menu__sidebar > div, .flyout-menu__sidebar > p, .flyout-menu__sidebar > a, .flyout-menu__sidebar > form, .flyout-menu > div, .flyout-menu > form{
+		padding:0 !important;
+	}
+	
+	h2 .live_search{
+		display: block;
+		padding-top: 12px;
+	}
+	
+	#api-access-key{
+		letter-spacing:0;
+		padding:0 22px;
+	}
+	
+	div.ui-dialog{
+		text-align:center;
+	}
+	
+}
+
+
+/**********************************************************/
+/* HEADER */
+/**********************************************************/
+
+@media screen and (max-width: 899px){		
+	
+	#header{
+		color: hsla(var(--header_hue),var(--header_saturation), var(--header_brightness),1) !important;
+		background-color:#fff !important;
+		background-image: none;
+		position:relative !important;
+		height: 55px !important;
+		min-height: 0 !important;
+		right:0!important;
+		top:0 !important;
+	}
+	
+	#main {
+		padding-top: 20px !important;
+	}
+	
+	body:not(.admin) #main {
+		padding: 25px 10px !important;
+	}
+	
+	.action-login #header, .action-register #header, .action-lost_password #header{
+		pointer-events: initial;
+		background-color: transparent !important;
+		position:fixed !important;	
+		width:100%;		
+	}
+	
+	.mobile-toggle-button{
+		background-color: hsla(var(--header_hue),var(--header_saturation), var(--header_brightness),1) !important;
+		border-left: 0 !important;
+		margin-top: -4px !important;
+		height: 59px !important;
+		float: left !important;
+	}
+	
+	.mobile-toggle-button:after{
+		margin-top:0px !important;
+	}
+	
+	html:not(.flyout-is-active) .action-login .mobile-toggle-button, html:not(.flyout-is-active) .action-register .mobile-toggle-button,html:not(.flyout-is-active)  .action-lost_password {
+		background-color: transparent !important;
+	}	
+
+	.flyout-menu{
+		background-color: hsla(var(--header_hue),var(--header_saturation), var(--header_brightness),1) !important;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		/*width: 0 !important;*/
+		right: 0 !important;
+		left: -250px !important;
+		height: 100% !important;
+	}
+
+	#wrapper{
+		left: 0px; 
+		overflow: visible !important;
+		/*min-height:667px;*/
+	}	
+	
+	.flyout-menu,  #wrapper,  #header,  #project-jump .drdn-trigger {	
+		-webkit-transition: all 0.5s ease-in-out;
+		-moz-transition: all 0.5s ease-in-out;
+		-o-transition: all 0.5s ease-in-out;
+		transition: all 0.5s ease-in-out;
+	}
+	
+	.flyout-menu h3{
+		width: 100%;
+	}
+	
+	.flyout-menu h3, .controller-my .flyout-menu h4{
+		background-color: hsla(var(--header_hue),var(--header_saturation), var(--header_brightness7),1) !important;
+		border-top: 0 !important;
+		border-bottom: 0 !important;
+		color: rgba(255,255,255,0.5) !important;
+		font-size: 12px !important;
+		font-weight: 500 !important;
+		padding: 5px 25px !important;
+		margin-top: 5px !important;
+		height: initial !important;
+	}
+	
+	.flyout-menu h4{
+		background-color: transparent !important;
+	}
+	
+	.flyout-is-active #wrapper{
+		left: 250px !important;		
+	}
+	
+	.flyout-is-active .mobile-toggle-button{
+		background-color: hsla(var(--header_hue),var(--header_saturation), var(--header_brightness),1) !important;
+	}	
+	
+	.flyout-menu ul{
+		margin:0 !important;
+		padding: 0 !important;
+	}
+	
+	.flyout-menu p{
+		font-size:11px;
+		letter-spacing:1px;
+		line-height: 0px;
+	}
+	
+	.flyout-menu ul li a{
+		height: initial !important;
+		padding-left: 22px !important;
+	}
+	
+	.flyout-menu ul li a:before{
+		color: rgba(255,255,255,0.5)!important;
+	}
+	
+	.flyout-menu__sidebar a{
+		padding-left: 22px !important;
+		line-height: 40px !important;
+		text-overflow: ellipsis;		
+		overflow:hidden;
+	}
+	
+	.flyout-menu__sidebar p a{
+		padding-left: 0 !important;
+	}
+	
+	.flyout-menu__sidebar >  p {
+		padding-left: 26px !important;
+		padding-right: 20px !important;
+		display: inline-block;
+	}
+
+	.flyout-is-active .action-login #header, .flyout-is-active .action-register #header,.flyout-is-active .action-lost_password #header{
+		right: -250px !important;
+	}
+	
+	.flyout-is-active .flyout-menu{
+		width: 250px !important;
+	}
+	
+	#project-jump .drdn-trigger{
+		background-image: url(../images/arrow-down2b.png) !important;
+		background-repeat: no-repeat !important;
+		background-position-y: 20px !important;
+		padding-left: 40px !important;
+		padding-right: 0 !important;
+		padding-top: 4px !important;
+		font-size: 16px !important;
+		font-weight: 500 !important;
+		width: initial !important;
+		color: hsla(var(--header_hue),var(--header_saturation), var(--header_brightness),1) !important;
+		height: 40px !important;
+		margin-left: 10% !important;
+		margin-right: 10% !important;
+	}	
+	
+	#project-jump .drdn-trigger:before{
+		content: none !important;
+	}
+	
+	#project-jump.drdn {
+		padding-right: 0 !important;
+		padding-left: 70px !important;		
+	}	
+	
+	.drdn-content{
+		border-radius:0px !important;
+	}
+	
+	.drdn-items > *:focus{
+		border: 0 !important;
+	}
+	
+	.flyout-menu .flyout-menu__avatar{
+		padding: 10px 25px !important;
+	}
+	
+	.flyout-menu__avatar a{
+		margin-right: 10px;
+	}
+	
+	.flyout-menu a {
+		font-size: 11px !important;
+	}
+	
+	.flyout-menu__sidebar > p a, .flyout-menu__sidebar >  div:not(#admin-menu) a {
+		text-decoration:underline;
+	}
+	
+	.search-magnifier--flyout{
+		display: none;
+	}
+	
+	.flyout-menu__search input[type='text']{
+		padding-left: 10px !important;
+		border-radius: 20px !important;
+		width:90% !important;	
+		margin-left:5%;
+		font-size: 14px !important;
+	}
+	
+	#project-jump .drdn-content{
+		top: 55px !important;
+		right: 0 !important;
+		left: initial !important;
+		width: calc(100% - 60px) !important;
+	}	
+	
+	#project-jump .drdn-content .autocomplete {
+		height: 30px!important;
+		font-size: 20px;
+		width: 90% !important;
+	}
+	
+	.drdn-content .quick-search{
+		text-align:center;
+	}
+	
+	#quick-search {
+		padding-top: 10px;
+	}
+	
+	#quick-search select{
+		margin-left: 5%;
+		background-color:#fff;
+	}
+	
+	#top-menu, #header #main-menu {
+		display: none !important;
+	}
+
+}
+
+
+/**********************************************************/
+/* BUTTONS */
+/**********************************************************/
+
+@media screen and (max-width: 899px){
+	
+	.admin #content > .contextual a, .admin p.buttons a, .flyout-menu input[type=submit]{
+		border-radius: 25px !important;
+		padding: 10px 40px !important;
+		border: 2px solid #fff !important;
+		cursor: pointer;
+		color:#fff !important;
+	}
+	
+	#content > .contextual a,  p.buttons a{
+		border-radius: 25px !important;
+		padding: 10px 20px !important;
+		border-width: 2px !important;
+		letter-spacing: 1px;
+		cursor: pointer;
+	}
+	
+	#content >.contextual{
+		margin-bottom: 20px !important;
+	}
+	
+	span.checkbox.on, span.radiobox.on {
+		width: 19px;
+		height: 19px;
+	}
+	
+	.flyout-menu span.checkbox{
+		margin-top:9px;
+	}
+	
+	.flyout-menu__sidebar form > ul li label{
+		height:0;
+	}
+	
+	.flyout-menu__sidebar form > ul li {
+		line-height: 22px !important;
+		display: block !important;
+		padding-left: 18px !important;
+		border-top: 0 !important;
+	}
+	
+	.flyout-menu__sidebar form > ul li a{
+		padding-left: 0px !important;
+	}	
+	
+	.contextual .icon-history, .contextual .icon-move,.contextual .icon-reply, .contextual .icon-comment, .contextual .icon-unvote, .controller-favorite_projects.action-search .contextual a, #content > .contextual .icon-import, #content > .contextual .icon-copy, #content > .contextual .icon-fav, #content > .contextual .icon-fav-off,  #content > .contextual .icon-passwd,  #content > .contextual .icon-email-add, #content > .contextual .icon-add, #content > .contextual .icon-lock,#content > .contextual .icon-time-add{
+		border-color: solid hsla(var(--header_hue),var(--header_saturation), var(--header_brightness),1) !important;
+	}
+	
+	.icon-only {
+		padding-left: 16px !important;
+		width: 18px !important;
+	}
+	
+	.mypage-box .icon-only {
+		/*padding-left: 4px !important;
+		width: 22px !important;*/
+	}
+	
+	a.atom, a.pdf, a.csv, a.png, a.vcf, a.xls {
+		display: inline-block;
+		margin-bottom:4px;
+	}	
+	
+	 body:not(.admin) .icon.icon-checked, body:not(.admin) .icon.icon-reload,body:not(.admin)  fieldset input[type=submit],body:not(.admin) #query_form_with_buttons .icon {
+		padding: 8px 14px!important;
+		float: left;
+		letter-spacing: 1px;
+	}
+	
+	.controller-projects.action-settings .tabular input{
+		width: initial !important;
+	}
+	
+	.controller-projects.action-settings .tabular .icon-del{
+		padding: 10px 22px !important;
+	}
+
+}
+
+
+/**********************************************************/
+/* FORMS */
+/**********************************************************/
+
+@media screen and (max-width: 899px){
+	
+	.pagination ul.pages{
+		margin: 15px 0;
+		padding: 0;
+		display: inherit;
+	}
+	
+	#query_form_with_buttons {
+		padding: 15px 25px 5px 25px!important;
+		margin-bottom: 20px !important;
+	}
+	
+	input.file_selector.filedrop {
+		width: 100% !important;
+	}
+	
+	body:not(.admin):not(.controller-my):not(.controller-projects) form{
+		margin-top:0;
+		margin-bottom:0;
+	}
+	
+}
+
+
+/**********************************************************/
+/* LOGIN */
+/**********************************************************/
+
+@media screen and (max-width: 899px){
+	
+	.action-login #login-form{
+		width: 100%;
+	}
+	
+	.action-login #login-form input[type=text], .action-login #login-form input[type=password]{
+		font-size: 22px;
+		margin-bottom: 30px;
+	}
+	
+	.action-login #header:after, .action-register #header:after, .action-lost_password #header:after {
+		content: '';
+		background: url(../customize/logo-login.png) no-repeat;
+		background-size: contain;
+		height: 250%;
+		width: 50%;
+		background-position-x: 50%;
+		background-position-y: 10px;
+		margin-left: 25%;		
+	}
+	
+	#login-form{
+		margin:0;
+	}
+	
+	.action-login  #login-form{
+		margin-top: 10% !important;
+	}
+	
+}
+
+
+/**********************************************************/
+/* FOOTER */
+/**********************************************************/
+
+@media screen and (max-width: 899px){
+	
+	#footer, .action-login #footer{
+		margin: 30px 5% 0 5%;
+		font-size: 9px;
+		line-height:10px;
+		width: 90%;
+		display: inline-block;
+	}
+	
+}
+
+/**********************************************************/
+/* MY PAGE */
+/**********************************************************/
+
+@media screen and (max-width: 899px){
+	
+	
+	.controller-welcome #content{
+		padding:55px 25px;
+	}
+	
+	.mypage-box .contextual{
+		padding-left: 6px;
+	}
+	
+	.mypage-box h3{
+		text-align:left;
+		padding: 17px 20px 10px 20px;
+	}		
+	
+	.sort-handle{
+		width:20px;
+	}
+
+}
+
+
+/**********************************************************/
+/* PROJECTS */
+/**********************************************************/
+
+@media screen and (max-width: 899px){
+	
+	.controller-projects.action-index span.checkbox{
+		margin-left: 10px;
+		margin-top: 18px;
+	}
+
+}
+
+/**********************************************************/
+/* ACTIVITY */
+/**********************************************************/
+
+@media screen and (max-width: 899px){	
+
+	#activity dt .project{
+		display:block;
+		margin-top: 10px;
+	}
+	
+	#activity dd{
+		margin-left:0 !important;
+		padding: 5px 10px !important;
+	}
+	
+	#activity dd.grouped {
+		margin-left: 52px !important;
+	}
+	
+	#activity dt img.gravatar{
+		margin-left: 0;
+		margin-bottom: 0 !important;
+	}	
+	
+}
+
+
+/**********************************************************/
+/* ISSUES */
+/**********************************************************/
+
+@media screen and (max-width: 899px){	
+
+	div.box{
+		padding:20px !important;
+		text-align:center;
+	}
+	
+}
+
+/**********************************************************/
+/* TIME */
+/**********************************************************/
+
+@media screen and (max-width: 899px){	
+
+	.controller-timelog.action-index #content form:nth-of-type(2){
+		padding:15px;
+	}
+	
+	.controller-timelog .query-totals{
+		margin-top:-20px;	
+	}
+	
+}
+
+
+/**********************************************************/
+/* GANTT */
+/**********************************************************/
+
+.controller-gantts #content >.contextual:first-of-type{
+	margin-bottom:0 !important;
+}
+
+.gantt_subjects .icon{
+	padding-left: 0;
+}
+
+.controller-gantts h2{
+	margin-top:-20px;
+	margin-bottom:20px;
+}
+
+
+/**********************************************************/
+/* AGILE */
+/**********************************************************/
+
+@media screen and (max-width: 899px){	
+
+	.controller-agile_boards #content form{
+		padding:15px;
+	}
+	
+	.controller-agile_boards table.list > tbody > tr > td{
+		padding:2px;
+	}	
+	
+	.controller-agile_boards .issue-card{
+		padding: 0px 0 15px 0 !important;
+	}
+	
+	.issue-card .issue-id, .issue-card .name{
+		padding-left:10px;
+	}
+	
+	.controller-agile_boards table.list th{
+		padding: 0px 5px 10px 5px;
+	}
+	
+	.new-card__input{
+		padding:0;
+	}
+	
+	.list.issues-board.status-colors.sticky{
+		margin: 0 8%;
+	}
+
+}
+
+
+/**********************************************************/
+/* ADMINISTRATION */
+/**********************************************************/
+
+@media screen and (max-width: 899px){
+
+	.controller-contacts.action-index #query_form, .controller-deals #query_form{
+		margin-top: 60px !important;	
+	}
+	
+	.admin fieldset{
+		margin-bottom: 0;
+		text-align:center;
+	}
+	
+	div.tab-content fieldset{
+		text-align:left;
+	}
+	
+	.admin fieldset >  *{
+		float:none;
+		margin-right: 0;		
+	}
+	
+	.admin fieldset select:not([multiple]),.admin fieldset input[type=text]{
+		width:74%;
+	}
+	
+	.admin :not(#sidebar) input[type=submit]{
+		margin-top:10px;		
+	}	
+
+	#admin-menu a{	
+		margin-left: -10px !important;	 
+		margin-bottom: 0 !important;
+		padding: 0 !important;
+		color: #fff !important;
+	}
+	 
+	  #admin-menu a.selected{
+		background-color: #fff !important;
+		color: hsla(var(--header_hue),var(--header_saturation), var(--header_brightness),1) !important;
+	}
+	  
+	   #admin-menu a.selected:before{
+		color: hsla(var(--header_hue),var(--header_saturation), var(--header_brightness),1) !important;		
+	}
+
+	 #admin-menu a.selected:after{
+		content: none;			
+	}
+
+	#admin-menu li a:before{
+		opacity:1;
+		margin-top: 0 !important;
+		margin-left: 0 !important;
+		margin-bottom: 0 !important;
+		margin-right: 4px !important;
+		font-size: 16px !important;
+	}
+	
+	#admin-index #admin-menu li{
+		width: 42% !important;
+		margin: 4% !important;
+	}
+	
+	#admin-index #admin-menu li a{
+		width: 100% !important;
+		margin-left: 0 !important;
+		padding-left: 0 !important;
+		padding-top: 10px !important;
+		font-size: 12px !important;
+		line-height: 12px !important;
+		letter-spacing: 1px !important;
+	}
+	
+	#admin-index #admin-menu li a:before{
+		margin-bottom: 6px !important;
+	}
+	
+	.admin #content >  h2{
+		margin-bottom: 30px;
+	}
+	
+	.admin .box{
+		margin-top: 0;
+		margin-bottom: 20px;
+		text-align: left;
+	}	
+	
+	.controller-settings.action-plugin #tab-content-general >  p:last-of-type{
+		display: block;
+	}
+	
+	.controller-settings.action-plugin #tab-content-general >  p:last-of-type span.radiobox{
+		margin-right: 8px;
+	}
+
+}
+
+
+/**********************************************************/
+/* PLUGINS */
+/**********************************************************/
+
+@media screen and (max-width: 899px){
+	
+	
+	.people_header{
+		margin-left:0;
+		text-align:center;
+		margin-top: -120px;
+		width:90%;
+		margin-left: -25px;
+	}
+	
+	.contacts_header{
+		margin-left:0;
+		text-align:center;
+		margin-top: -110px;
+		width:90%;
+		margin-left: -25px;
+	}
+	
+	.controller-favorite_projects.action-search #query_form h2{
+		margin-left:0;
+		text-align:center;
+		margin-top: -130px;
+		width:90%;
+		margin-left: -25px;
+	}
+
+	 .controller-deals .contacts_header{
+		margin-left: 0px;
+	 }
+	
+	.flyout-menu table.note_data td.name h4 {
+		margin:0 !important;
+		font-size: 11px;
+		display: inherit;		
+	}
+	
+	table.person_data td.name h4{
+		margin:0 !important;
+		text-align:left !important;
+		letter-spacing: 2px !important;
+	}
+	
+	table.note_data .content.preview {
+		margin: 5px 0px 0px 0px;
+		font-size: 11px !important;
+		color: #000 !important;
+		font-style: italic;
+		text-transform: none !important;
+		line-height:11px;
+	}
+	
+	table.note_data td.name{
+		font-size:11px !important;
+	}
+	
+	.controller-contacts.action-index #query_form{
+		margin-top:175px !important;
+		/*margin-top:110px !important;*/
+	}
+	
+	 .controller-orders.action-index #query_form,  .controller-products.action-index #query_form,  .controller-deals.action-index #query_form,  .controller-people.action-index #query_form{
+		margin-top: 160px !important;
+	}
+	
+	.controller-favorite_projects.action-search #query_form{
+		margin-top: 240px !important;
+	}
+	
+	.controller-contacts .contacts_header, .controller-people .contacts_header{
+		margin-left: 0;
+		margin-top: -120px;
+		text-align: center;
+	}
+	
+	 .controller-orders.action-index .contacts_header,  .controller-products.action-index .contacts_header{
+		 margin-left: 0;
+	 }
+	
+	.person.attributes.vcard{
+		padding-left: 22px;
+		margin-top: 20px;
+	}
+
+	.person.attributes tr td {
+		font-size: 11px;
+		letter-spacing: 0;
+	}
+	
+	.flyout-menu #attributes .contextual {
+		float: right;
+		padding: 0;
+		margin-right: 10px;
+		margin-top: -7px;
+	}
+	
+	.controller-favorite_projects div.project_card{
+		width:100%;
+		padding:4%;
+	}
+	
+	.board.details > .contextual{
+		margin:40px auto;
+		text-align: center;
+		float: none;
+	}
+	
+	.question-meta li{
+		margin: 14px 19px;
+		font-size: 11px;
+	}
+	
+	.orders-stat th, .invoices-stat th{
+		padding: 14px 19px 4px 19px !important;
+		font-size: 11px;
+	}
+
+}

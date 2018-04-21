@@ -1,0 +1,50 @@
+@import url("../variables.less");
+@import url("../mixins.less");
+/*Styles for Redmine Checklist*/
+
+#issue-form #checklist_form {
+    .rounded;
+    border: 1px solid @border-color;
+    padding: @GGW;
+    margin: @GGW;
+}
+
+#checklist_form {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    
+    label {
+        margin-bottom: @GGW;
+    }
+
+    span#checklist_form_items {
+        clear: both;
+        display: block;
+    }
+}
+
+div#checklist {
+    padding: 2*@GGW;
+    border: 1px solid @border-color;
+    margin-top: @GGW;
+    clear: both;
+    
+    > p {
+        color: @black;
+        font-size: 1.5*@BFS;
+        margin-bottom: @GGW !important;
+        margin: 0.5*@GGW 0 @GGW;
+    }
+
+    > p strong {
+        font-weight: normal !important;
+    }
+
+    ul {
+        margin-left: @GGW;
+    }
+
+    li {
+        padding-bottom: 0 !important;
+    }
+}

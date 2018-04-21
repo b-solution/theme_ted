@@ -1,0 +1,72 @@
+@import url("../variables.less");
+@import url("../mixins.less");
+
+/*Styles for Redmine Products*/
+#product_form {
+    label[for="product_name"] {
+        margin-right: @GGW;
+    }
+
+    input#product_name {
+        width: 239px;
+    }
+    
+    .splitcontentleft, .splitcontentright {
+        @media (min-width: 770px) {
+        	margin-top: @GGW;
+        }
+    }
+    
+    .splitcontentleft {
+        @media (max-width: 770px) {
+        	margin-top: @GGW;
+        }
+    }
+    
+    input[type="text"], input[type="password"] {
+        @media (max-width: 320px) {
+        	max-width: 100% !important;
+        }
+    }
+}
+
+.product.issue.details {
+    margin-top: 30.5px;
+    padding: @GGW;
+    
+    .subject_header {
+        padding: 0 !important;
+    }
+
+    .subject_header td.name {
+        padding: 0;
+    }
+
+    .description {
+        padding: 0;
+        border: none;
+    }
+
+    .wiki {
+        padding-left: 0;
+    }
+
+    p strong {
+        color: @black;
+        font-size: 1.5*@BFS;
+        line-height: 1.2;
+        padding: 0;
+        margin: @GGW 0 ((1.5*@BFS * 1.2) - @GGW) 0;
+        font-weight: normal;
+    }
+
+    tr:first-child {
+        border-top: 1px solid @border-color;
+    }
+}
+
+#order_form {
+    input#order_contact_id {
+        margin-right: @GGW;
+    }
+}

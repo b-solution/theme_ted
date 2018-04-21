@@ -1,0 +1,97 @@
+@import url("variables.less");
+@import url("mixins.less");
+/*Modal popups*/
+
+.modal,
+div.modal {
+    position: absolute !important;
+}
+
+.ui-widget {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin-top: 60px;
+}
+
+div.modal {
+    -moz-box-shadow: 0px 0px 10px fade(@black, 30%);
+    -webkit-box-shadow: 0px 0px 10px fade(@black, 30%);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=135, Color='#555555')";
+}
+
+div.modal,
+.ui-widget {
+    
+    .rounded0;
+    background: @white;
+    z-index: 50;
+    padding: 0;
+    max-width: 100% !important;
+    
+    * {
+        font-family: @font-family-base !important;
+        font-size: @BFS;
+    }
+
+    .roles-selection label {
+        display: block;
+    }
+
+    input[type="checkbox"] {
+        position: relative;
+        top: -2px;
+        display: inline;
+        margin-right: @GGW;
+    }
+
+    &.ui-datepicker {
+        padding: @GGW;
+    }
+
+    &.ui-widget-content {
+        border: none;
+    }
+
+    h3.title {
+        display: none;
+    }
+
+    p.buttons {
+        text-align: right;
+        margin-bottom: 0;
+    }
+
+    .ui-corner-all {
+        .rounded0;
+    }
+
+    .ui-dialog-titlebar-close {
+        .transition;
+        background: url("../../images/delete.png") no-repeat center center !important;
+        border: none !important;
+    }
+
+    .ui-dialog-titlebar-close:hover,
+    .ui-dialog-titlebar-close:focus {
+        .rotate;
+    }
+
+    .ui-dialog-titlebar-close span {
+        display: none !important;
+    }
+
+    .ui-dialog-content {
+        overflow: auto !important;
+    }
+
+    input,
+    button {
+        font-size: 11px !important;
+    }
+
+    a,
+    button {
+        color: @link-color !important;
+    }
+}

@@ -1,0 +1,102 @@
+@import url("../variables.less");
+@import url("../mixins.less");
+/*Styles for Redmine Agile*/
+
+.ui-draggable-handle {
+    z-index: 999;
+}
+
+.controller-agile_boards #content {
+    z-index: 7;
+}
+
+#admin-menu a.agile {
+    background-image: none !important;
+}
+
+table.issues-board tbody td {
+    vertical-align: top;
+}
+
+.issue-card img.gravatar {
+    margin-top: -4px;
+}
+
+.controller-agile_boards table.list tbody tr:hover {
+    background: none !important;
+}
+
+.controller-agile_boards #content > .contextual .icon-edit:before {
+	content: none;
+}
+
+.esc {
+    display: none;
+}
+
+html.agile-board-fullscreen {
+    .esc {
+        display: block;
+        position: absolute;
+        left: @GGW;
+        bottom: 6*@GGW;
+        color: @red;
+        background: @white;
+        padding: 0.5*@GGW;
+    }
+
+    div.agile-board {
+        top: 49px !important;
+        height: 100%;
+        background: fade(@white, 95%) !important;
+    }
+
+    .autoscroll {
+        overflow-x: initial;
+    }
+
+    div.agile-board .autoscroll {
+        min-height: 90%;
+    }
+
+    #sidebar {
+        display: none;
+    }
+
+    #top-menu {
+        box-sizing: unset !important;
+        padding: 5px 0 0 !important;
+        position: fixed !important;
+        top: 0 !important;
+        z-index: 9999 !important;
+    }
+
+    table.issues-board {
+        margin-bottom: 9*@GGW;
+        thead, thead tr {
+            width: 100%;
+        }
+
+        thead {
+            position: fixed;
+            z-index: 999;
+            top: 49px;
+            left: 0;
+        }
+
+        thead tr {
+            display: table;
+            background: #fff;
+        }
+
+        tbody {
+            position: relative;
+            top: 49px;
+        }
+
+        tr:hover {
+            background: none !important;
+            border: none !important;
+        }
+    }
+}

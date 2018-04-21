@@ -1,0 +1,475 @@
+/* BoostMine Theme version 1.4, Copyright (C) 2017 Luis Blasco www.bestredminetheme.com */
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?e8xxn3');
+  src:  url('../fonts/icomoon.eot?e8xxn3#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?e8xxn3') format('truetype'),
+    url('../fonts/icomoon.woff?e8xxn3') format('woff'),
+    url('../fonts/icomoon.svg?e8xxn3#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.icon-only:not(.icon-link-break) {
+	height:18px;
+	width: 2px;	
+}
+
+.contextual .icon-only{
+	display:block;
+	width: 22px;
+	height:22px;
+	float:right;
+}
+
+#history .icon-only {
+    display: block;
+    width: 2px;
+    height: 22px;
+	margin-right:6px;
+    float: left;
+	color:hsla(var(--hue),var(--saturation), var(--brightness),0.6);
+}
+
+#history .journal .icon-only {
+    width: 0;
+	margin-right:0;
+}
+
+#history .icon-only:hover{
+	text-decoration:none;
+	color: hsla(var(--hue),var(--saturation), var(--brightness),1);
+}
+
+#top-menu #loggedas a:after  {
+	margin-left:4px;
+	margin-right:0;
+}
+
+#top-menu .questions, #top-menu .help, #top-menu .my-page, #top-menu .register, #top-menu .administration, #top-menu .home, #top-menu .my-account, #top-menu .logout, #top-menu #loggedas a { 
+	display: inline-block;
+    overflow: hidden;
+    text-indent: 0px;
+    width: 22px;
+}
+
+#top-menu li a:before, #main-menu li a:before, #admin-menu li a:before, .icon.icon-plugins:before, #admin-menu .tags:before, .controller-people_settings h2:before, .controller-settings h2:before, .controller-admin.action-plugins h2:before, .icon.tags:before,   .additionals:before{
+  content: "\e915";	
+}
+
+#main-menu #new-object:before{
+	content:none;
+}
+
+#top-menu .register:before, .flyout-menu .register:before {
+  content: "\e900";
+}
+
+#top-menu .login:before,#admin-menu .users:before, .flyout-menu .login:before,.icon.icon-user:before, .controller-users:not(.action-show) h2:before{
+  content: "\e901";
+}
+
+#top-menu #loggedas a:after {
+	color: var(--textcolor);
+	content: "\e901";	
+}
+
+#top-menu #loggedas {
+	height: 22px;
+}
+
+.flyout-menu .settings:before, .flyout-menu .administration:before, #top-menu .administration:before, .controller-admin h2:before, .icon-settings:before {
+  content: "\e902"; 
+}
+
+ #top-menu .my-page:before, .controller-my.action-page h2:before, .flyout-menu .my-page:before {  
+  content: "\e903";
+}
+
+.flyout-menu .people:before,#admin-menu .groups:before, #admin-menu .people:before,  #top-menu .people:before, .icon-group:before, .people_header:before, .controller-groups h2:before, .controller-people h2:first-child:before, .icon.icon-company-contact:before{
+  content: "\e904" !important;
+}
+
+.controller-favorite_projects .filters h2:before,  #admin-menu .projects:before ,  #top-menu .projects:before, #main-menu .projects:before, .icon.icon-projects:before, .flyout-menu .projects:before{
+  content: "\e907";
+}
+
+#top-menu .logout:before, .flyout-menu .logout:before {
+  content: "\e908";
+}
+
+.flyout-menu .my-account:before, #top-menu .my-account:before, .icon.icon-summary:before, .flyout-menu .my-account:before {
+  content: "\e909";
+}
+
+#activity .icon-issue-edit:before {
+	content: "";
+}
+
+.flyout-menu .calendar:before, #main-menu .calendar:before, .controller-calendars h2:before {
+	content: "\e910";
+}
+
+.flyout-menu .gantt:before, #main-menu .gantt:before, .controller-gantts h2:before, .flyout-menu .easy-gantt:before, #top-menu .easy-gantt:before, #main-menu .easy-gantt:before, .controller-easy_gantt h2:before {
+	content: "\e911";
+}
+
+.flyout-menu .time-entries:before, #main-menu .time-entries:before, .controller-timelog h2:before,  .icon-time-add:before {
+	content: "\e912";
+}
+
+.flyout-menu .issues:before, #admin-menu .issue-statuses:before, #main-menu .issues:before,.icon.icon-issue-edit:before, .controller-issues h2:before, .controller-issue_statuses h2:before {
+	content: "\e913";
+}
+
+.icon.icon-help:before, .controller-admin.action-info h2:before{
+  content: "\e944" !important;	
+}
+
+.flyout-menu .questions:before, #top-menu .questions:before, #main-menu .questions:before, .controller-questions h2:before{
+  content: "\e914";		
+}
+
+.flyout-menu .tags:before,#admin-menu .tags:before, #top-menu .tags:before, #main-menu .tags:before{
+  content: "\e916";		
+}
+
+.controller-contacts h2.contacts_header:before,#top-menu a.contacts:before, #main-menu a.contacts:before, .icon.contacts:before, .flyout-menu .contacts:before,#admin-menu .contacts:before{
+  content: "\e917";	
+}
+
+.flyout-menu .agile:before, .controller-agile_boards h2:before,.icon.agile:before, #top-menu a.agile:before , #main-menu a.agile:before,#admin-menu .agile:before{
+  content: "\e918";	
+}
+
+.icon.icon-server-authentication:before, .controller-auth_sources h2:before,#admin-menu .ldap-athentication:before{
+  content: "\e919" !important;	
+}
+
+.icon.icon-lock:before, .icon.icon-passwd:before{
+  content: "\e920";	
+}
+
+.controller-welcome .wiki:before, #top-menu .home:before, .flyout-menu .home:before{
+  content: "\e921";		
+}
+
+#main-menu .overview:before, .controller-projects h2:before, .flyout-menu .overview:before{
+  content: "\e922";	
+}
+
+.icon.settings:before, #main-menu .settings:before,#admin-menu .settings:before{
+  content: "\e923";		
+}
+
+.flyout-menu .deals:before, #top-menu .deals:before, #main-menu .deals:not(table):before, .controller-deals h2.contacts_header:before, .js-general-menu .deals:before{
+  content: "\e924";		
+}
+
+.flyout-menu .files:before, #main-menu a.files:before, .controller-files h2:before, .icon.icon-import:before{
+  content: "\e925";		
+}
+
+.flyout-menu .wiki:before, #main-menu .wiki:before, .controller-wiki h2:before, .icon.icon-move:before{
+  content: "\e926";		
+}
+
+.flyout-menu .documents:before, #main-menu .documents:before, .controller-documents h2:before, .admin .icon.icon-copy:before, .icon.icon-copy:before, .icon.icon-duplicate:before{
+  content: "\e927";		
+}
+
+.sort-handle:before{
+	content: "\e928";	
+}
+
+.icon-close:before, .icon-only.icon-not-ok:before{
+	content: "\e929";	
+}
+
+.icon.icon-edit:before, .icon-only.icon-edit:before{
+	content: "\e930";	
+}
+
+.toggle-multiselect:before,.icon-only.icon-add:before, span.add_attachment a:before, .icon-add-bullet:before{
+	content: "\e931";
+}
+
+.icon.icon-checked:before, .icon.icon-test:before,.icon-only.icon-checked:before, .icon-only.icon-ok:before{
+	content: "\e933";	
+}
+
+.icon.icon-del:before, .icon-only.icon-del:before{
+	content: "\e934";
+}
+
+body:not(.controller-projects) .icon.icon-fav-off:before, body:not(.controller-projects) .icon.icon-fav:before{
+	content: "\e935";
+}
+
+.icon.icon-zoom-out:before{
+	content: "\e937";
+}
+
+.icon.icon-zoom-in:before, .icon-only.icon-zoom-in:before{
+	content: "\e938";
+}
+
+.png:before{
+	content: "\e939";
+}
+
+.icon.icon-reply:before, .icon-only.icon-reply:before, .flyout-menu .boards:before, .icon-only.icon-comment:before, .icon.icon-comment:before,  .icon.icon-helpdesk:before, #main-menu .boards:before, .controller-boards.action-index h2:first-child:before{
+	content: "\e940";
+}
+
+.icon.icon-reply{
+	margin-right:3px;
+}
+
+.js-project-menu .operations:before, .js-general-menu .operations:before, .flyout-menu .finance:before,#admin-menu .finance:before, #top-menu .finance:before, #main-menu .finance:before, #main-menu .operations:before, .controller-operations h2:before{
+  content: "\e943";		
+}
+
+
+.icon-add-payment:before, .flyout-menu .expenses:before,#admin-menu .expenses:before, #top-menu .expenses:before, #main-menu .expenses:before, .controller-expenses h2:before{
+  content: "\e947";		
+}
+
+.icon-invoice-add-context:before, .flyout-menu .invoices:before,#admin-menu .invoices:before, #top-menu .invoices:before, #main-menu .invoices:before, .controller-invoices h2:before{
+  content: "\e948";		
+}
+
+.flyout-menu .products:before,#admin-menu .products:before, #top-menu .products:before, #main-menu .products:before, .controller-products h2:before{
+  content: "\e949";		
+}
+
+.icon.icon-order-add:before, .flyout-menu .orders:before,#admin-menu .orders:before, #top-menu .orders:before, #main-menu .orders:before, .controller-orders h2:before{
+  content: "\e94a";		
+}
+
+.icon.icon-fullscreen:before{
+	content: "\e93a";	
+}
+
+span.icon.icon-email{
+	background-image:none;
+}
+
+.icon.icon-email-add:before, .icon.icon-email:not(.email):before{
+	content: "\e93c";
+}
+
+.icon.helpdesk:before, .controller-helpdesk_reports h2:first-child:before,#admin-menu .heldesk:before{
+	content: "\e93d" !important;
+}
+
+.icon.icon-add:before, #main-menu .new-issue:before,#issue_helpdesk_ticket_attributes_contact_id_add_link:before,  #invoice_contact_id_add_link:before{
+	content: "\e93e";
+}
+
+.controller-projects .my-project:after{
+	content: "\e932";
+	padding-left: 12px;
+	font-size: 18px !important;
+	vertical-align: baseline;
+}
+
+#top-menu .external:before, .flyout-menu .external:before {
+  content: "\e90a";
+}
+
+#quick-search label a:before {
+	content: "\e90b";
+}
+
+ .icon.icon-history:before, #main-menu .activity:before, .controller-activities h2:before, .flyout-menu .activity:before {
+	content: "\e90d";
+}
+
+#main-menu .news:before, .controller-news h2:before, .flyout-menu .news:before {
+	content: "\e90f";
+}
+
+.icon.icon-list:before,#admin-menu .enumerations:before, .controller-enumerations h2:before{
+  content: "\e91a";	
+}
+
+.icon.icon-custom-fields:before,#admin-menu .custom-fields:before, .controller-custom_fields h2:before{
+  content: "\e91b";	
+}
+
+.icon.icon-workflows:before,#admin-menu .workflows:before, .controller-workflows h2:before{
+  content: "\e91c";	
+}
+
+.icon.icon-issue:before, #admin-menu .trackers:before, .controller-trackers h2:before{
+  content: "\e91d";	
+}
+
+.icon.icon-roles:before, #admin-menu .roles:before, .controller-roles h2:before, .vcf:before {
+  content: "\e91e";
+}
+
+.projectshide.closed:before{
+  content: "\e93f";
+}
+.projectshide.open:before{
+  content: "\e941";
+}
+
+#main-menu .roadmap:before, .controller-versions h2:first-of-type:before, .flyout-menu .roadmap:before {
+  content: "\e942";
+}
+
+.icon-view:before{
+  content: "\e945";
+}
+
+.icon-vote:not(.vote):before, .icon-unvote:not(.vote):before{
+  content: "\e946";
+}
+
+#activity .icon.icon-issue:before,  #main-menu .menu-children a:before{
+  content: "";	
+}
+
+.additionals:before{
+	padding-right:0  !important;
+}
+
+.projectshide{
+	display: inline-flex;
+}
+
+.atom:before{
+	content: "\e92d";
+}
+
+.pdf:before, .icon-pdf:before{
+	content: "\e92b";
+}
+
+.csv:before, .xls:before{
+	content: "\e92c";
+}
+
+.icon-settings, .sort-handle, .icon-close, .icon-close:hover, .toggle-multiselect  {
+	 background:none;
+}
+
+.contextual >*:not(:first-child){
+	margin-left:0;
+}
+
+.icon.icon-reload:before{
+	content: "\e92f";	
+}
+
+.icon.icon-save:before{
+	content: "\e92e";	
+}
+
+#top-menu .help:before, .flyout-menu .help:before{
+	content: "\e93b";
+}
+
+
+
+ #invoice_contact_id_add_link:before, #issue_helpdesk_ticket_attributes_contact_id_add_link:before, .icon.icon-history:before, .icon.icon-move:before, #top-menu li a:before, .icon.icon-reply:before, .icon-only.icon-reply:before, #admin-menu li a:before, .icon.easy-gantt:before,.controller-easy_gantt h2:before,.controller-orders.action-show h2:before, .icon.icon-pdf:before, .icon.icon-add-payment:before, .icon-invoice-add-context:before, .icon-order-add:before,.controller-products h2:before, .controller-expenses h2:before, .controller-invoices h2:before, .contextual .icon-vote:before, .contextual .icon-unvote:before, .controller-favorite_projects .filters h2:before, .controller-questions h2:before,  .questions:before,.controller-operations h2:before, .finance:before, #main-menu li a:before, #main-menu .new-issue:before, .controller-issue_statuses h2:before, .controller-versions h2:first-of-type:before, #main-menu .roadmap:before, .controller-boards.action-index h2:first-child:before, #main-menu .boards:before, .icon.icon-comment:before, .icon.icon-email:not(.email):before,  .controller-helpdesk_reports h2:first-child:before, .projectshide:before, .icon.icon-add:before, .icon.helpdesk:before,  #admin-menu a.selected:after, .icon.icon-passwd:before, .icon.icon-email-add:before, .controller-admin.action-index.admin li a:before, #main-menu .settings:before, .icon-add-bullet:before, span.add_attachment a:before, .icon.icon-duplicate:before, .icon-settings:before, #top-menu .help:before, .icon.icon-test:before, .icon.icon-summary:before, .icon.icon-fullscreen:before, .icon.icon-import:before, .xls:before, .vcf:before, .png:before, .icon.icon-zoom-in:before, .icon.icon-zoom-out:before, #sidebar a.selected:before, .icon.icon-del:before, body:not(.controller-projects) .icon.icon-fav:before, body:not(.controller-projects) .icon.icon-fav-off:before, .icon.icon-copy:before, .icon-time-add:before, .icon.icon-edit:before, .controller-people h2:before, .controller-admin.action-info h2:before, .controller-people_settings h2:before, .admin #sidebar .icon:before, .controller-admin.action-plugins h2:before, .controller-auth_sources h2:before, .controller-settings h2:before, .controller-enumerations h2:before, .controller-custom_fields h2:before, .controller-workflows h2:before, .controller-issue_statuses h2:first-child:before , .controller-trackers h2:before, .controller-roles h2:before , .controller-groups h2:before, .controller-users h2:before, .admin .icon.icon-copy:before, .my-project:after, .toggle-multiselect:before, .icon.icon-reload:before, .icon.icon-save:before, .icon.icon-checked:before, .contacts_header:before, .controller-files h2:before, .controller-wiki h2:before, .controller-documents h2:before, .controller-news h2:before, .controller-calendars h2:before , .controller-agile_boards h2:before, .controller-gantts h2:before, .controller-timelog h2:before, .pdf:before, .csv:before, .atom:before, .controller-issues h2:before, .sort-handle:before, .icon-close:before,.icon.settings:before, .deals:not(table):before, a.files:before, .wiki:before, .documents:before, #main-menu .overview:before, a.contacts:before, .people_header:before, .controller-activities h2:before, .controller-welcome .wiki:before, .icon.icon-lock:before, .additionals:before, .icon.icon-help:before, .icon.icon-plugins:before, .icon.tags:before, .agile:before, .icon.icon-server-authentication:before, .icon.icon-list:before, .icon.icon-custom-fields:before, .icon.icon-workflows:before, .icon.icon-issue:before, .icon.icon-roles:before,.icon.icon-settings:before, .icon-issue-edit:before, .icon-group:before, .icon.people:before, .controller-admin h2:before, .icon-user:before, .icon-projects:before, .controller-projects h2:before , .controller-my.action-page h2:before, #main-menu .gantt:before, #main-menu .calendar:before, #main-menu .news:before, #main-menu .time-entries:before , #main-menu .issues:before, #main-menu .activity:before, #top-menu .login:before, #top-menu .register:before, #top-menu .home:before, #top-menu .administration:before, #top-menu .my-page:before, #top-menu .projects:before, #top-menu .people:before,#top-menu .products:before, #top-menu .orders:before, #top-menu .external:before, #top-menu .my-account:before, #top-menu .logout:before, #top-menu #loggedas a:after, #quick-search label a:before, #main-menu .projects:before  {
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 21px !important;
+  vertical-align: -25%;
+  margin-right: 4px;
+}
+
+.flyout-menu li a:before{
+/*.flyout-menu .documents:before, .flyout-menu .news:before , .flyout-menu .calendar:before, .flyout-menu .gantt:before, .flyout-menu .time-entries:before, .flyout-menu .issues:before, .flyout-menu .roadmap:before, .flyout-menu .activity:before,  .flyout-menu .overview:before, .flyout-menu .logout:before, .flyout-menu .my-account:before, .js-general-menu .help:before, .js-general-menu .administration:before, .js-general-menu .people:before, .js-general-menu .deals:before, .js-general-menu .contacts:before, .js-general-menu .projects:before, .js-general-menu .my-page:before, .flyout-menu .home:before, .flyout-menu .login:before, .flyout-menu .register:before {*/
+
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px !important;
+  vertical-align: -25%;
+  margin-right: 4px;
+}
+
+
+.icon.icon-company-contact, .icon.icon-helpdesk, .icon.icon-comment, .icon-only.icon-comment, .icon-only.icon-edit,.icon-only.icon-zoom-in, .icon-only.icon-ok, .icon-only.icon-del, .icon-only.icon-add,  .icon-only.icon-checked, .icon-only.icon-not-ok{
+	background:none;
+}
+
+
+.icon-view:before, .icon-vote:before,  .icon.icon-company-contact:before, .icon.icon-helpdesk:before, .icon-only.icon-comment:before, .icon-only.icon-edit:before, #menuhide:before, .icon-only.icon-zoom-in:before, .icon-only.icon-ok:before, .icon-only.icon-del:before, .icon-only.icon-add:before, .icon-only.icon-checked:before, .icon-only.icon-not-ok:before{
+	font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size:18px !important;
+  margin-left:-16px;
+}
+
+
+#menuhide:before{
+	content: "\e936";
+	font-size: 11px !important;		
+	margin-left: 0;
+}
+
+
+.admin #sidebar .icon:before,  #admin-menu li a.selected:before{
+	margin-right:8px !important;
+}
+
+ #admin-menu li a.selected{
+    padding-bottom: 2px !important;
+ }
+
+body:not(.admin) #sidebar a.selected:before, #admin-menu a.selected:after{
+	content: "\e936";
+	font-size: 8px !important;
+	margin-top: 4px;
+    position: absolute;
+	left:8px;
+}
+
+#admin-menu a.selected:after{
+	margin-right: -6px;
+	padding-top: 3px;
+}
+
+.icon-only.icon-checked:before {
+    font-size: 12px !important;
+}
+
+.icon-only.icon-checked:after {
+	content: "";
+}
+
+

@@ -1,0 +1,38 @@
+/* BoostMine Theme version 1.4, Copyright (C) 2017 Luis Blasco www.bestredminetheme.com */
+
+/**********************************************************/
+/* INITIALIZE */
+/**********************************************************/
+
+/*@import url(../../../stylesheets/application.css);*/
+@import url(redmine.css);
+@import url(icons.css);
+@import url(forms.css);
+@import url(../customize/customize.css);
+@import url(plugins.css);
+@import url(style.css);
+@import url(mobile.css);
+@import url(hacks.css);
+
+/**********************************************************/
+/* HACK IE11 */
+/**********************************************************/
+
+/*@import url(../ie11/icons_ie.css);
+@import url(../ie11/forms_ie.css);
+@import url(../ie11/plugins_ie.css);
+@import url(../ie11/style_ie.css);
+@import url(../ie11/mobile_ie.css);*/
+
+:root {	
+	--header_brightness-5: calc(var(--header_brightness) - 5%);
+	--header_brightness7: calc(var(--header_brightness) + 7%);
+	--header_brightness10: calc(var(--header_brightness) + 10%);
+	--header_brightness30: calc(var(--header_brightness) + 30%);
+	--brightness10: calc(var(--brightness) + 10%);
+	--brightness15: calc(var(--brightness) + 15%);
+	--brightness20: calc(var(--brightness) + 20%);
+	--brightness25: calc(var(--brightness) + 25%);
+	--brightness30: calc(var(--brightness) + 30%);
+	--brightness35: calc(var(--brightness) + 35%);
+}

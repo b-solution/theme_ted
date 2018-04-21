@@ -1,0 +1,509 @@
+@import url("../variables.less");
+@import url("../mixins.less");
+/* ------------ Styles for Redmine CRM plugins in general ------------ */
+
+.live_search {
+    margin-left: @GGW;
+    input.live_search_field {
+        font-size: 12px !important;
+    }
+}
+
+/* ------------ Styles for Redmine Contacts Pro ------------ */
+
+#admin-menu a.contacts {
+    background-image: none !important;
+}
+
+td.subject_info ul {
+    margin: 0;
+}
+
+div.colorPicker-picker {
+    float: left;
+}
+
+.controller-contacts {
+    .contact.details {
+        margin-top: 30px;
+    }
+    
+    .contact.details .subject_header {
+        td {
+            @media (max-width: 560px) {
+                width: 100% !important;
+                display: block;
+                padding: 0;
+                border: none;
+            }
+        }
+    
+        .subject_header td.avatar {
+            @media (max-width: 560px) {
+            	display: none !important;
+            }
+        }
+    }
+
+    #content > .contextual {
+        padding: @GGW @GGW 0 0;
+    }
+
+    #note_note_time {
+        margin-left: @GGW;
+    }
+
+    textarea.wiki-edit {
+        padding-right: @GGW;
+    }
+    
+    .name h1 {
+        text-transform: none;
+        line-height: 24px;
+        font-size: 16px !important;
+        margin-bottom: 0.5*@GGW !important;
+        padding: 0 !important;
+        
+        @media (max-width: 960px) {
+        	line-height: 24px;
+        }
+    }
+    
+    #sidebar {
+        @media (max-width: 960px) {
+            .box-sizing;
+            clear: both !important;
+            display: block !important;
+            float: left;
+            paddingdding: 0 2*@GGW;
+            width: 90%;
+            min-height: 0;
+            margin-bottom: 2*@GGW;
+        }
+    }
+}
+
+div.contact {
+    background: @query-form !important;
+    border: 1px solid @border-color !important;
+    padding: @GGW !important;
+    input.ui-widget-content {
+        background: inherit !important;
+    }
+}
+
+.icon-merge {
+    background-image: url("../../images/arrow_merge.png") !important;
+}
+
+#comments {
+    clear: none !important;
+}
+
+#add_issue_link,
+#contact_projects .contextual a {
+    background: none;
+    line-height: 20px;
+    padding: 2px 0 2px 20px;
+}
+
+#notes {
+    > div {
+        .rounded;
+        background: @white;
+        border: 1px solid @border-color-gray;
+        width: 91%;
+        padding: @GGW;
+        margin: 0 0 2*@GGW 4*@GGW;
+        position: relative;
+    }
+
+    > div:before {
+        border-color: transparent @border-color-gray;
+        border-style: solid;
+        border-width: 10px 5px 10px 0;
+        content: "";
+        display: block;
+        left: -6px;
+        position: absolute;
+        top: 15px;
+        width: 0;
+        z-index: 0;
+    }
+
+    > div:after {
+        border-color: transparent @white;
+        border-style: solid;
+        border-width: 10px 5px 10px 0;
+        content: "";
+        display: block;
+        left: -5px;
+        position: absolute;
+        top: 15px;
+        width: 0;
+        z-index: 1;
+    }
+
+    .icon {
+        margin-right: 0;
+    }
+}
+
+#note_attributes textarea {
+    border: 1px solid @border-color-gray;
+    margin: @GGW 0;
+}
+
+.subject_header {
+    td.name {
+        padding-left: 15px;
+    }
+
+    td.avatar {
+        text-align: left !important;
+    }
+
+    li.icon-email {
+        background-image: none;
+    }
+
+    li.icon-phone {
+        background-image: none !important;
+    }
+
+    .tag_list {
+        margin-right: 0.5*@GGW;
+    }
+}
+
+#edit_tags_form .button-small {
+    margin-right: 0.5*@GGW;
+}
+
+#contact_data {
+    .extended p {
+        padding-left: 113px;
+    }
+
+    #cke_contact {
+        clear: both;
+    }
+
+    .extended p:first-child {
+        padding-left: 3px;
+    }
+
+    .ui-state-default,
+    .ui-widget-content .ui-state-default,
+    .ui-widget-header .ui-state-default {
+        background: url("../images/ui-bg_glass_100_f6f6f6_1x400.png") repeat-x scroll 50% 50% lighten(@gray-lighter, 4%) !important;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        max-width: 220px !important;
+    }
+}
+
+input.autocomplete,
+input#contact_first_name,
+input#contact_address_attributes_street1,
+input#contact_phone,
+input#contact_email {
+    width: 219px !important;
+}
+
+li.tagit-new input {
+    height: auto;
+}
+
+.contact.sidebar {
+    th {
+        text-align: left;
+    }
+
+    td {
+        padding: 0.5*@GGW 0 !important;
+    }
+
+    td.author {
+        font-size: 100% !important;
+    }
+}
+
+form table.contacts.index {
+    tbody tr:hover {
+        background-color: @changeset-color !important;
+    }
+
+    td {
+        padding: @GGW @GGW 0 @GGW !important;
+        color: @text-color;
+    }
+
+    tr.context-menu-selection td {
+        color: @text-color !important;
+    }
+
+    tr.context-menu-selection td .tags a {
+        color: lighten(@gray-lighter, 4%) !important;
+    }
+}
+
+.controller-notes .edit_note .jstElements {
+    clear: none !important;
+}
+
+.icon-contact {
+    background-image: none !important;
+}
+
+.icon-vcard {
+    background-image: none !important;
+}
+
+/* ------------ Deals ------------ */
+
+.controller-deals {
+    .live_search input.live_search_field {
+        font-size: @BFS !important;
+    }
+
+    &.action-index .contextual {
+        padding: @GGW @GGW 0 0;
+    }
+
+    .deal.details {
+        margin-top: 30px;
+    }
+
+    .deal.details ul {
+        margin: 0;
+    }
+
+    .name h1 {
+        font-size: 16px !important;
+        line-height: 24px;
+        margin-bottom: 0.5*@GGW !important;
+        padding: 0 !important;
+        text-transform: none;
+    }
+
+    .controller-deals .extended-attributes img {
+        margin: 0 0.5*@GGW 0 @GGW;
+    }
+
+    #comments h4 {
+        margin-top: @GGW;
+    }
+}
+
+div.deal {
+    background: @query-form !important;
+    border: 1px solid @border-color !important;
+    padding: @GGW !important;
+    
+    &.details {
+        img.gravatar {
+            @media (max-width: 500px) {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    
+        td {
+            @media (max-width: 500px) {
+            	display: block;
+            }
+        }
+    
+        td.subject_info {
+            @media (max-width: 500px) {
+            	border-left: none;
+            }
+        }
+    
+        .contextual {
+            @media (max-width: 500px) {
+                float: none;
+                display: block;
+                margin-top: @GGW;
+            }
+        }
+    
+        .contextual a {
+            @media (max-width: 500px) {
+            	float: none !important;
+            }
+        }
+    }
+}
+
+.controller-notes,
+.controller-operations {
+    .box .ui-datepicker-trigger {
+        margin: 0 0.5*@GGW 0 @GGW;
+    }
+}
+
+#operation_form .splitcontentright {
+    
+    input[type="text"], input[type="password"] {
+        width: 110px;
+    }
+    
+    label[for="operation_operation_date"] {
+        @media (max-width: 420px) {
+        	width: 100%;
+        }
+    }
+}
+
+#issue-form .issue-deal {
+    padding: 0;
+    p {
+        .rounded;
+        padding: @GGW;
+        border: 1px solid @border-color;
+    }
+}
+
+/* ------------ Invoices ------------ */
+
+.account.issue.details {
+    margin-top: 20.75px;
+    padding: @GGW;
+    .subject {
+        padding: 0;
+    }
+
+    .description {
+        padding: 0;
+        border: none;
+    }
+
+    .wiki {
+        padding-left: 0;
+    }
+}
+
+.icon-money-dollar {
+    .rounded;
+    background: @icon-color;
+    background-image: none !important;
+    border: none;
+    color: @white;
+    padding: 7px;
+    margin-top: 6px;
+}
+
+.invoice-menu {
+    z-index: 999;
+}
+
+.table.invoices-stat {
+    th, td {
+        padding: 0.5*@GGW 0;
+    }
+}
+
+div.issue.invoice {
+    background: lighten(@link-color, 48.5%) !important;
+    border: 1px solid lighten(@link-color, 45%);
+    max-width: 980px;
+    padding: 2*@GGW;
+    margin-top: 2*@GGW;
+    
+    @media (max-width: 420px) {
+    	padding: 0.5*@GGW;
+    }
+}
+
+table.invoice-lines tbody tr.line-data:hover {
+    background-color: @highlight !important;
+}
+
+table.invoice-lines.form {
+    width: 99%;
+}
+
+table.list.invoice-lines td,
+table.list.invoice-lines th {
+    padding: 0.5*@GGW !important;
+}
+
+table.invoice-lines tr.total th,
+table.invoice-lines tr.total td {
+    @media (max-width: 420px) {
+    	text-align: left !important;
+    }
+}
+
+table.invoice .gravatar + a {
+    @media (max-width: 420px) {
+    	line-height: 2;
+    }
+}
+
+table.list.invoice-lines tr.total:last-child th {
+    font-size: 16px;
+}
+
+.icon-add-deal {
+    background-image: none !important;
+}
+
+div.add-note {
+    margin-right: 0;
+}
+
+.controller-products,
+.controller-orders {
+    #content > .contextual {
+        padding: @GGW @GGW 0 0;
+    }
+}
+
+.controller-invoices {
+    table.contacts.index th {
+        padding: 0.5*@GGW;
+        
+        @media (max-width: 420px) {
+        	text-align: left !important;
+        }
+    }
+
+    .invoice-wrapper {
+        max-width: 980px;
+        padding: 2*@GGW;
+    }
+    
+    .invoice-wrapper {
+    	@media (max-width: 770px) {
+    		padding: 0;
+    	}
+        
+        #comments, div#invoice_payments {
+            @media (max-width: 770px) {
+                width: 100%;
+                float: none;
+                display: block;
+                padding: 0;
+                margin: 2*@GGW 0;
+            }
+        }
+    }
+    
+    &.action-show #content .contextual:first-of-type {
+        @media (max-width: 540px) {
+        	float: none;
+        	white-space: normal;
+        }
+        
+        a {
+            @media (max-width: 540px) {
+            	display: inline-block;
+            }
+        }
+    }
+}

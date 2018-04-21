@@ -1,0 +1,184 @@
+@import url("variables.less");
+@import url("mixins.less");
+
+/*My page*/
+table.list.issues td.project a {
+    color: @gray;
+}
+
+/* ------------ My page ------------ */
+.controller-my {
+    &#list-top .mypage-box h3 {
+        margin-top: 0;
+    }
+
+    #content > .contextual a.icon {
+        padding: 2px 0 2px 2*@GGW;
+    }
+
+    .mypage-box {
+        .transition;
+        border: 1px solid @border-color;
+        padding: @GGW !important;
+        margin: 0 0 2*@GGW 0 !important;
+        
+        &.cal {
+            overflow-x: auto;
+        }
+
+        &:hover {
+            border: 1px solid darken(@border-color, 20%);
+        }
+
+        p em {
+            font-size: 80%;
+        }
+
+        h4 + p {
+            margin: 0;
+            color: @gray-light;
+        }
+
+        .wiki {
+            margin-bottom: 2*@GGW;
+            padding-left: 0.5*@GGW;
+        }
+
+        h3 {
+            font-size: @BFS;
+        }
+
+        h3 a {
+            font-size: @BFS;
+            margin-right: 0.5*@GGW;
+        }
+
+        table.list td:first-child {
+            max-width: 170px;
+            padding: 0 @GGW 0 1.5*@GGW !important;
+            text-align: left;
+        }
+
+        table.list.tickets {
+            td.subject {
+                min-width: 170px;
+            }
+
+        }
+
+        /*Contacts assigned to me*/
+        #duplicates {
+            ul {
+                margin-bottom: @GGW;
+            }
+
+            li {
+                padding: 0.5*@GGW 0;
+            }
+        }
+
+        > .contextual {
+            .transition;
+            opacity: 0.3;
+        }
+
+        &:hover > .contextual {
+            opacity: 1;
+        }
+
+        .icon-only {
+            font-size: 0;
+        }
+
+        .sort-handle {
+            margin-left: @GGW;
+        }
+    }
+
+    .mypage-box {
+        table.time-entries th:nth-child(1), table.time-entries th:nth-child(3), table.time-entries th:last-child, table.time-entries td:nth-child(1), table.time-entries td:nth-child(3), table.time-entries td:last-child, table.time-entries tr.odd td:nth-child(2) {
+            @media (max-width: 420px) {
+                display: none;
+            }
+        }
+
+        table.time-entries tr.odd td:nth-child(1),
+        table.time-entries tr.odd td:nth-child(3) {
+            @media (max-width: 420px) {
+                display: table-cell !important;
+            }
+        }
+    }
+
+    .splitcontentleft,
+    .splitcontentright {
+        width: 49%;
+        background: none;
+        border: none;
+        padding: 0;
+    }
+
+    &.action-page {
+        .cal {
+            @media (max-width: 560px) {
+                display: none;
+            }
+        }
+
+        .contextual {
+            @media (max-width: 560px) {
+                display: none;
+            }
+        }
+    }
+
+    &.action-page_layout .contextual .icon-cancel {
+        background-image: none;
+        background: url("../../images/true.png") no-repeat 0px 2px;
+    }
+
+    &.action-page_layout .hidden {
+        display: block !important;
+    }
+
+    &.action-page_layout #list-top,
+    &.action-page_layout #list-left,
+    &.action-page_layout #list-right,
+    .dragging .block-receiver {
+        .box-sizing;
+        .rounded0;
+        border: 1px dashed @blue;
+        padding: 2*@GGW;
+        margin: 0 0 2*@GGW 0;
+        
+        &:hover {
+            border: 1px dashed darken(@blue, 20%);
+        }
+    }
+
+    #list-left {
+        width: 49%;
+        float: left;
+    }
+
+    #list-right {
+        width: 49%;
+        float: right;
+    }
+
+    #list-left,
+    #list-right {
+        @media screen and (max-width: 719px) {
+            width: 100%;
+            float: none;
+            display: block;
+        }
+    }
+}
+
+#my_page_issues_count {
+    @media (max-width: 420px) {
+        display: none;
+    }
+
+}

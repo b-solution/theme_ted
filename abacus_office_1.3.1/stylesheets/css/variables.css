@@ -1,0 +1,43 @@
+/*Additional styles for Time tracker*/
+.icon-stop,
+.icon-start {
+  background-image: none !important;
+}
+input#ime_tracker_round {
+  line-height: normal !important;
+}
+#top-menu #account ul a.icon-start:before {
+  line-height: 20px !important;
+}
+table.tt_list th {
+  text-align: center;
+}
+table.tt_list div.task_form_input {
+  clear: both;
+  margin-bottom: 15px;
+}
+table.tt_list input.tl_book_form_button,
+table.tt_list input.tl_edit_form_update_button {
+  margin: 0 10px 0 0;
+  clear: both;
+  display: block;
+  float: left;
+}
+table.tt_list a:first-of-type {
+  float: left;
+}
+.tt_list .icon_column {
+  width: auto !important;
+}
+@media (max-width: 770px) {
+  .task_form_sub_fields {
+    float: none !important;
+    display: block;
+  }
+}
+@media (max-width: 480px) {
+  table.tt_list td:nth-child(2),
+  table.tt_list th:nth-child(2) {
+    display: none;
+  }
+}

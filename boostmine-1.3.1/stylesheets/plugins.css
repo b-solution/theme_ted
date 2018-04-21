@@ -1,0 +1,949 @@
+/* BoostMine Theme version 1.4, Copyright (C) 2017 Luis Blasco www.bestredminetheme.com */
+
+/**********************************************************/
+/* PEOPLE */
+/**********************************************************/
+
+img.gravatar{
+	border-radius:10%;
+	/*margin-left: -10px;*/
+}
+
+#people_list{
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+table.people.index td.checkbox {
+    padding: 12px 0px 0px 20px !important;
+}
+
+.person.attributes tr:hover{
+	background:none !important;	
+}
+
+.person.attributes tr th{
+	text-transform: uppercase;
+	color: hsla(var(--hue),var(--saturation), var(--brightness35),1);
+	font-size: 9px;
+	letter-spacing: 2px;
+	margin-left: 10px;
+    padding-bottom: 20px;
+	display:list-item;
+}
+
+.person.attributes tr td{
+	padding-top:0;
+	vertical-align:top;
+	color:#fff;
+}
+
+#attributes a {
+    text-transform: none !important;
+    color: #fff !important;
+    letter-spacing: initial !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    padding: 0 !important;
+}
+#attributes a.icon-only.icon-add {
+	padding-left:16px !important;
+}
+
+
+.subject_header .name{
+	vertical-align: bottom !important;
+	padding-left: 20px;
+}
+
+.controller-people.action-show h2{
+	display:none;
+}
+
+.controller-people.action-show div.person.details table.subject_header {
+    width: initial;
+}
+
+.controller-people.action-show div.person.details table.subject_header {
+    width: initial;
+}
+
+.controller-people.action-show table.subject_header {
+    width: initial;
+}
+.contact.details{
+	margin-top:20px;
+}
+
+.contact.details table.subject_header{
+	padding:4px 10px
+}
+
+div.person.details {
+    /*margin-bottom: 10px !important;*/
+}
+
+table.person_data{
+	padding:0 10px;
+}
+
+table.person_data td.name h4 {
+    margin: 7px 0 10px 0 !important;
+    padding: 0 !important;
+    line-height: inherit !important;
+    position: inherit !important;
+}
+
+table.person_data td{
+	padding:0 !important;
+}
+
+table.person_data tr:hover{
+	background: transparent !important;
+}
+
+div#sidebar div.contextual{
+	margin-right:0 !important;
+}
+
+.contact.sidebar th{
+	color:rgba(255,255,255,0.5);
+	font-weight: 500;
+}
+
+.contact.sidebar td{
+	color: #fff;
+}
+
+body.controller-contacts #sidebar {  
+    width: 12% !important;
+    padding: 0 1% 30px 1% !important;   
+}
+
+table.contacts.index tbody tr:hover{
+	background-color: hsla(var(--header_hue),var(--header_saturation), 94%,1) !important;
+}
+
+table.contacts.index{
+	border: 0 !important;
+}
+
+table.contacts.index tr{
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+	background-color: transparent;
+}
+
+table.contacts.index td{
+	 border-color: hsla(var(--hue),var(--saturation),92%,1) !important;
+}
+
+#sidebar #notes h4{
+	position: inherit;
+}
+
+#sidebar .note.content.preview {
+	color:rgba(255,255,255,0.5) !important;
+	font-size: 11px !important;
+}
+
+#sidebar .icon-attachment{
+	background-image: none;
+	padding:0 !important;
+}
+
+.controller-contacts.action-show .icon-only.icon-download, .controller-contacts.action-show .icon-only.icon-download{
+	display: none !important;
+}
+
+.icon-only.icon-download{
+	width:0;
+}
+
+
+div.wiki table, div.wiki td, div.wiki th{
+	border: 0;
+}
+
+.attachments.size{
+	float: left;
+}
+
+div#sidebar div.contact.card {
+	background: rgba(255,255,255,0.1) !important;
+    /*margin-right: 0 !important;*/
+    overflow-x: inherit !important;
+	border-radius: 5px;
+	padding: 10px;
+	width: 93%;
+}
+
+.small-card .contact.card h2:before{
+	content: none;
+}
+
+.small-card .contact.card *{
+	background-image: none !important;	
+}
+
+.small-card .contact.card td, .small-card .contact.card p,  .small-card .contact.card a{
+	padding-left: 0 !important;
+	padding-bottom: 2px !important;
+	font-weight: 500 !important;
+	
+}
+
+.small-card .contact.card td > *{
+	display: block !important;
+}
+
+ .small-card .contact.card a{
+	 text-transform: none !important;
+	 font-size: 11px !important;
+	 letter-spacing: 0px !important;
+ }
+
+ div.contact.card table.subject_header td.name {
+    padding-left: 4px;
+    padding-top: 0px;
+    vertical-align: top !important;
+}
+
+#sidebar h4.contacts_header{
+	font-size: 11px;
+	text-transform: none;
+	color: rgba(255,255,255,0.5) !important;
+	border: 0;
+}
+
+h4.contacts_header a{
+	padding: 0 !important;
+}
+
+#recently_viewed{
+	padding: 0 10px;
+}
+
+table.people.index td.name h1, table.contacts.index td.name h1 {
+    font-size: 15px !important;
+    font-weight: 700 !important;
+}
+
+.contact.sidebar.attributes.vcard{
+	padding:0 10px;
+}
+
+ table.sidebar.attributes th{
+	padding-right: 10px !important;
+}
+
+ #content :not(.note_data_header) table.note_data {
+    overflow: auto;
+    margin-bottom: 30px;
+	background-color: #fff;
+	border-radius: 4px;
+	border-collapse: collapse;	
+}
+
+ #content table.note_data td{
+	padding:0;
+ }
+
+  #content table.note_data .contextual{
+    margin: 10px;
+    position: absolute;
+    right: 2%;
+    z-index: 999;
+}
+ 
+ #content table.note_data h4{
+	 border:0;
+	padding: 10px 20px;
+ }
+ 
+ table.note_data td.name div.wiki{
+	 padding: 10px 20px 15px 20px;
+	 background-color: hsla(var(--header_hue),var(--header_saturation), 90%,1);
+	 margin:0;
+ }
+ 
+/* #company_contacts .avatar{
+	 padding:10px;
+ }
+ 
+  #company_contacts .avatar{
+	  padding-left:0;
+}*/
+
+.people_header{
+	margin-left:-25px;
+}
+
+
+#sidebar #add_issue_form textarea, #sidebar #add_issue_form #issue_subject{
+	width:90% !important;
+}
+
+#ticket_data_form .select2-selection__rendered {
+	color:#333;
+	padding-top:5px;
+}
+
+#ticket_data_form .select2-search__field{
+	width:80%;
+	border:0;
+}
+
+form#ticket_data_form {
+	margin-bottom: 20px !important;
+    padding: 20px!important;
+	width: 83%;
+}
+
+#sidebar #issue_contacts{
+	clear:both;
+}
+
+.select2-container{
+	width:100% !important;	
+	min-width:200px;
+}
+
+#issue-form .email-template .splitcontentleft .select2-container, #invoice_form .select2-container{
+	width: 86% !important;
+}
+
+#issue_helpdesk_ticket_attributes_contact_id_add_link img,  #invoice_contact_id_add_link img{
+	display:none;
+}
+
+#issue_helpdesk_ticket_attributes_contact_id_add_link,  #invoice_contact_id_add_link{
+	margin-left:10px;
+	text-decoration:none;
+}
+
+.controller-contacts #query_form, .controller-deals #query_form{
+	display: block;
+}
+
+
+/**********************************************************/
+/* TAGS */
+/**********************************************************/
+
+span.tag-label-color, .tag-label-color{
+	border: 0 !important;
+	padding: 4px 8px !important;
+	color: #fff;
+}
+
+.tags-cloud a, span.tag-label-color a{
+	padding: 4px 0 !important;
+	text-transform: none !important;
+	letter-spacing: 1px !important;
+}
+
+#admin-menu a.additionals::before{
+	font-family: var(--font);
+}
+
+.admin .list tr .tag-label-color a{
+	color: #fff !important;
+}
+
+   #issue_tags .select2-selection{
+	vertical-align: -15%;
+    border: 0;
+    padding: 6px 8px;	
+    border-radius: 3px;
+	width: 96%;
+}
+
+
+
+/**********************************************************/
+/* GANTT */
+/**********************************************************/
+
+.gantt_hdr {
+    position: absolute;
+    top: 0;
+    height: 16px;
+    border: 1px solid #ffffff !important;
+    text-align: center;
+    overflow: hidden;
+}
+
+.gantt_subjects{
+	font-size: 0.9em;	
+	font-weight: 700;
+	color:#888;
+}
+
+.issue-overdue, .issue-behind-schedule{
+	color:#000;
+}
+
+.gantt_subjects_container a.issue{
+	color:#fff !important;
+	margin-right: 4px;
+}
+
+.gantt_subjects .icon:not(.icon-projects):before{
+	content:"";
+}
+
+.gantt_subjects .icon.icon-projects:before, .gantt_subjects .icon.icon-projects a{
+	font-size:13px !important;
+	font-weight:900 !important;
+	color: hsla(var(--header_hue),var(--header_saturation), var(--header_brightness),1) !important;
+}
+
+.gantt_subjects span{
+	background-image:none;
+}
+
+.controller-gantts img.gravatar {
+    border-radius: 0;
+    margin-left: 16px;
+    width: auto;
+    height: 100%;
+	vertical-align: bottom;
+}
+
+.gantt_subjects_column, #gantt_area {
+	font-family: var(--font2);
+}
+
+div.tooltip:hover span.tip {
+    display: block;
+    position: absolute;
+    top: 12px;
+    width: 270px;
+    border: 0;
+    background-color: #fff;
+    padding: 13px;
+    font-size: 0.9em;
+    color: #505050;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+div.tooltip:hover span.tip a{
+	display:block;
+	margin-bottom:4px;
+}
+
+@media screen and (max-width: 899px){
+	
+	.controller-gantts img.gravatar {
+		margin-left: 0;
+	}
+	
+}
+
+
+/**********************************************************/
+/* AGILE */
+/**********************************************************/
+
+.issue-card {
+    padding: 4px 20px 35px 20px !important;
+    border-top: 0 !important;
+	border-bottom: 0 !important;
+	border-right: 0 !important;
+    background-color: hsla(var(--header_hue),var(--header_saturation), 94%,1) !important;
+    margin: 0 0 7px 0 !important;
+    word-wrap: break-word;
+    text-align: left;
+    white-space: normal;
+    cursor: move !important;
+    position: relative;
+	border-radius:3px;
+}
+
+.controller-agile_boards .issue-card  {
+	padding: 20px 0 !important;
+	border-left-width: 5px !important;
+}
+
+.issue-id input{
+	/*display: block !important;*/
+}
+
+.issue-card div.checklist input[type=checkbox]{
+	margin-left:5px !important;
+}
+
+.issue-card .user{
+	float:right;
+}
+
+.issue-card .info {
+    border-top: 1px solid #FFFFFF !important;
+    padding-top: 10px !important;
+    margin-top: 10px !important;
+}
+
+.issues-board .add-issue {
+    background: transparent;
+    border: 1px dashed hsla(var(--header_hue),var(--header_saturation), 90%,1) !important;
+    padding: 5px 10px !important;
+    margin: 0 !important;		
+}
+
+.issues-board .add-issue .new-card__input {
+    outline: none;
+    width: 96% !important;
+	opacity:0.5;
+    border: 0px;
+    background: transparent;
+    position: relative;
+    text-align: center;
+	font-size: 10px;
+	font-weight:700;
+}
+
+table.list.issues-board th {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center !important;
+    font-size: 11px !important;
+}
+
+html.agile-board-fullscreen .icon-fullscreen{
+	text-indent: inherit !important;
+	margin-right: 20px;
+	font-size:0;
+	padding: 8px 0 8px 20px !important;
+}
+
+.issue-card .checkbox{
+	/*display: block !important;*/
+}
+
+.card-fields .floating label span {
+	width: 19px !important;
+	display: initial !important;
+	/*vertical-align: middle !important;*/
+}
+
+.card-fields .floating label span.on {
+	width: 10px !important;
+}
+
+.issue-card span.checkbox{
+	margin-left: -26px!important;
+	margin-top: -6px !important;
+}
+
+.issue-card .issue-id, .issue-card .name{
+	padding: 0 20px;
+}
+
+.card-fields .floating {
+    margin-top: 5px;
+}
+
+.controller-agile_versions .issue-card{
+	padding: 20px 0 !important;
+	border-left: 5px !important;
+}
+
+.controller-agile_boards .info.description.last_comment{
+	padding-left:20px;
+}
+
+.controller-agile_boards .icon.icon-comment.last-comment{
+	padding-left:0;
+}
+
+.controller-agile_boards .icon.icon-comment.last-comment:hover{
+	background-color:transparent;	
+}
+
+
+
+/**********************************************************/
+/* HELP DESK */
+/**********************************************************/
+
+.controller-settings.action-plugin #tab-content-general > p:last-of-type .radiobox{
+	opacity:1 !important;
+}
+
+.controller-settings.action-plugin #tab-content-general > p:last-of-type span.radiobox{
+	display:none;
+}
+
+div.email-template{
+	background-color: hsla(var(--hue),var(--saturation), 96%,1) !important;
+    border: 0 !important;
+}
+
+.admin #tab-content-templates fieldset:nth-child(2){
+	background-color: transparent !important;
+}
+
+#tab-content-widget p{
+	float:none;
+}
+
+.helpdesk_chart{
+	width: initial !important;
+}
+
+.icon.icon-helpdesk:before, .icon.icon-company-contact:before{
+    margin-right: 8px;
+}
+
+form#ticket_data_form, #add_issue_form {
+    background: rgba(255,255,255,0.1)!important;
+    display: block;
+    padding: 6px;
+    margin-bottom: 6px;
+    margin-right: 0!important;
+    border: 0!important;
+	border-radius: 3px!important;
+	float: left;
+}
+
+#customer_profile_and_issues{
+	float:left;
+	margin-bottom:20px;
+	width:100%;
+}
+
+#customer_profile_and_issues #customer_profile{
+	display:inherit;
+	width:100%;
+}
+
+#issue-form .icon-email-to{
+	background-image: none;
+	padding-left:0;
+}
+
+
+/**********************************************************/
+/* FAVOURITE PROJECTS */
+/**********************************************************/
+
+.controller-favorite_projects .filters {
+	margin-top: 60px;
+}
+
+.controller-favorite_projects .filters h2 {	
+	position: absolute;
+    margin-top: -80px;
+	margin-left: -25px;
+}
+
+.controller-favorite_projects div.row {
+    padding-left: 0 !important;
+}
+
+.controller-favorite_projects div.project_card {
+	width: 17%;
+    height: 150px;
+    float: left;
+    margin: 0 1% 20px 0;
+    position: relative;
+    text-align: left;
+    background: hsla(var(--hue),var(--saturation),92%,1);
+    padding: 1%;
+    /*text-rendering: optimizeLegibility;*/
+    text-shadow: none;
+    border: solid 0;
+	padding-bottom: 10px;
+	border-radius: 4px;
+}
+
+div.project_card .parent > h4{
+	width: initial !important;
+	padding-right: 5px !important;
+}
+
+.controller-favorite_projects div.project_card div.title{
+	width: 100%;
+}
+
+.controller-favorite_projects div.project_card:hover{
+	background-color: #fff !important;	
+    -webkit-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.06);
+    -moz-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.06);
+    box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.06);
+}
+
+.controller-favorite_projects div.project_card .people{
+	bottom:10px;
+}
+
+.controller-favorite_projects .contextual{
+	color: transparent;
+}
+
+.controller-favorite_projects .contextual a{
+	background: transparent;
+    border-radius: 30px;
+    border: 2px solid hsla(var(--header_hue),var(--header_saturation), var(--header_brightness10),1);
+    color: hsla(var(--header_hue),var(--header_saturation), var(--header_brightness10),1);
+    padding: 13px 22px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 9px;
+    cursor: pointer;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.controller-favorite_projects .contextual a:hover{
+	background: hsla(var(--header_hue),var(--header_saturation), var(--header_brightness10),1) !important;
+    color: #fff !important;
+}
+
+.admin .box .box{
+	padding:0;	
+	box-shadow: none !important;
+}
+
+.admin .box .box label, .admin .box .box p{
+	width: initial;
+	margin-left: 0;
+	padding-left: 0;
+	padding-right: 20px;
+    margin-bottom: 20px;
+}
+
+div.project_card .description{
+	width: initial !important;
+}
+
+
+/**********************************************************/
+/* CHECK LIST */
+/**********************************************************/
+
+#history .details span.checkbox{
+	float:none;
+	margin-left:-20px;
+	margin-right:4px;
+	vertical-align: bottom;
+    margin-top: 4px;
+}
+
+#history .details span.checkbox.on + i{
+    text-decoration: line-through;
+	opacity:0.5;
+}
+
+#checklist span.checkbox{
+	background-color: hsla(var(--hue),var(--saturation),92%,1);
+}
+
+#checklist span.checkbox.on{
+	border-color: hsla(var(--hue),var(--saturation),92%,1);
+	background-color:#fff;
+}
+
+#checklist_form{
+	padding-top:12px;
+	padding-bottom:12px;
+}
+
+#checklist_form .icon, #checklist_form .icon:hover{
+	border:0;
+	padding:0;
+	background-color: transparent !important;
+}
+
+#checklist_form .icon:before{
+	font-size: 16px !important;
+}
+
+
+/**********************************************************/
+/* INVOICES */
+/**********************************************************/
+
+div.issue.invoice{
+	background-color:#fff!important;
+}
+
+.icon-pdf, .icon-add-payment{
+	background-image: none !important;
+	text-decoration:none !important;
+	padding: 13px 22px !important;
+	margin-right: 2px !important;
+}
+
+div.account, div.operation{
+	background-color:#fff!important;
+}
+
+table.invoice-lines tr.total th{
+	text-align: right !important;
+}
+
+/**********************************************************/
+/* ORDERS */
+/**********************************************************/
+
+.controller-orders #query_form{
+	margin-top: 42px !important;
+}
+
+.icon-invoice-add-context{
+	background-image: none !important;
+	text-decoration:none !important;
+	padding: 13px 22px !important;
+	margin-right: 2px !important;
+}
+
+div.details table.product-lines tr.total th{
+	text-align: right !important;
+}
+
+.list.product-lines{
+	width:99%;
+}
+
+/**********************************************************/
+/* PRODUCTS */
+/**********************************************************/
+
+.controller-products #query_form{
+	margin-top: 42px !important;
+}
+
+.controller-products .product.details{
+	background-color: #fff !important;
+}
+
+.icon-order-add{
+	background-image: none !important;
+	text-decoration:none !important;
+	padding: 13px 22px !important;
+	margin-right: 2px !important;
+}
+
+/**********************************************************/
+/* QUESTIONS & ANSWERS */
+/**********************************************************/
+
+.votes.icon-vote, .question-meta .icon-vote:not(.vote),   .contextual .icon-vote, .contextual .icon-unvote:not(.vote), .question-meta .icon-view{
+	background-image: none;
+}
+
+input.questions-search{
+	border: 0 !important;
+	border-radius: 25px !important;
+	background-image: none !important;
+	height: 35px !important;
+	font-size: 14px !important;
+	width: 100% !important;
+}
+
+.topic {
+    padding: 10px 0 30px !important;
+    border-bottom: 1px dashed hsla(var(--hue),var(--saturation), var(--brightness35),1);
+}
+
+/*input.questions-search::-webkit-input-placeholder, input.questions-search::-moz-placeholder, input.questions-search:-ms-input-placeholder, input.questions-search:-moz-placeholder { 
+  color: #000 !important;
+  opacity : 0.5 !important;
+  font-size: 14px !important;
+}*/
+
+
+/**********************************************************/
+/* EASY GANTT */
+/**********************************************************/
+
+.redmine .icon-settings{
+	background-image: none !important;
+	text-decoration: none !important;
+	padding: 6px 16px !important;
+	margin-right:2px;
+}
+
+.redmine #button_save{
+	padding: 8px 16px !important;
+	margin-right:2px;
+}
+
+.redmine .push-left .checkbox:not(input){
+	position: absolute;
+    margin-left: -24px;
+    margin-top: 6px;
+	background-color:hsla(var(--header_hue),var(--header_saturation), 96%,1);	
+}
+
+.redmine .push-left .checkbox.on:not(input){
+	border-color:hsla(var(--header_hue),var(--header_saturation), 96%,1);
+	background-color:hsla(var(--header_hue),var(--header_saturation), var(--header_brightness),1);
+}
+
+.redmine .push-left input.checkbox{
+	margin-left:20px;
+}
+
+.icon-stats{
+	background-image:none;
+}
+
+#top-menu .icon{
+	padding-left:0;
+}
+
+/**********************************************************/
+/* LAPD */
+/**********************************************************/
+
+.controller-ldap_settings .group{
+	color:#000;
+}
+
+.controller-ldap_settings #wrapper{
+	min-height:100%;
+}
+
+.controller-ldap_settings #main-menu{
+	display:none;
+}
+
+#ldap_attributes {
+	display:grid;
+	background: rgba(255,255,255,0.1);
+}
+
+#ldap_attributes label{
+    width: 295px;
+	float:left;
+	text-align:right;
+}
+
+
+
+/**********************************************************/
+/* SCRUM */
+/**********************************************************/
+
+body.action-login #sidebar,  body.action-register #sidebar,  body.action-lost_password #sidebar{
+	float: left;
+	overflow-x:hidden;
+	width: 12%;		
+	margin: 2%;
+	padding: 0 1% 30px 1%;
+	border-radius: 4px;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);	
+	position: absolute;
+	text-align:left;
+}
+
+body.action-login #menuhide,  body.action-register #menuhide,  body.action-lost_password #menuhide{
+	display:none;	
+}

@@ -1,0 +1,66 @@
+@import url("../variables.less");
+@import url("../mixins.less");
+/*Styles for Redmine People*/
+
+.controller-people {
+    #sidebar {
+        width: 30%;
+    }
+
+    #content {
+        width: 67%;
+    }
+
+    &.action-index .contextual {
+        padding: @GGW @GGW 0 0;
+    }
+    
+    &.action-index .contextual {
+    	@media (max-width: 420px) {
+    		padding: 0;
+    	}
+    }
+
+    .person.details {
+        td.name {
+            vertical-align: middle !important;
+        }
+
+        h1 {
+            padding-left: 0 !important;
+            
+            @media (max-width: 500px) {
+            	padding: 0 !important;
+            }
+        }
+        
+        img.gravatar {
+            @media (max-width: 500px) {
+                width: 30px;
+                height: 30px;
+            }
+        }
+        
+        table.subject_header td.avatar {
+            @media (max-width: 500px) {
+            	width: 30px !important;
+            }
+        }
+    }
+
+    table.people h1,
+    .person.details h1 {
+        text-transform: none;
+        font-size: 1.3*@BFS !important;
+    }
+
+    #content > h2 {
+        margin-bottom: 2*@GGW;
+    }
+}
+
+.filters {
+    @media (max-width: 420px) {
+    	clear: both;
+    }
+}

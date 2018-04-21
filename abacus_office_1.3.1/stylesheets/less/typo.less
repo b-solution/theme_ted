@@ -1,0 +1,110 @@
+@import url("variables.less");
+@import url("mixins.less");
+
+/* ------------ Typography ------------ */
+/* Margin calculation: 
+example: margin: @GGW 0 ((1.5*@BFS * 1.25) - @GGW) 0;
+margin top must be @GGW - if not, you will have to replace @GGW in the formula
+((heading font size * heading line height) - margin top)
+
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: @headings-font-family;
+    font-weight: normal;
+    color: @headings-color;
+}
+
+h1,
+.h1 {
+    font-size: 2*@BFS;
+    padding: @GGW 0 2*@GGW 2*@GGW;
+    margin: 0; // margin not used due to h1 background
+    line-height: 1.25;
+}
+
+h2,
+.h2 {
+    font-size: 1.7*@BFS;
+    line-height: 1.2;
+    padding: 0;
+    margin: @GGW 0 ((1.7*@BFS * 1.2) - @GGW) 0;
+}
+
+// h2 below project menu
+#content > h2 {
+    font-size: 1.4*@BFS;
+    padding: 0;
+}
+
+h3,
+.h3 {
+    font-size: 1.4*@BFS;
+    line-height: 1.2;
+    padding: 0;
+    margin: @GGW 0 ((1.5*@BFS * 1.2) - @GGW) 0;
+}
+
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+    font-size: @BFS;
+    line-height: 1.2;
+    margin: @GGW 0 ((@BFS * 1.2) - @GGW) 0;
+    font-weight: bold;
+}
+
+/* ------------ Wiki / Issue detail typography and styles ------------*/
+
+.wiki h1,
+.wiki h2,
+.wiki h3,
+.wiki h4,
+.wiki h5,
+.wiki h6 {
+    color: @gray-dark;
+    text-transform: none;
+    background: none;
+    border: none;
+}
+
+.wiki h1 {
+    .h2;
+}
+
+.wiki h2 {
+    .h3;
+    color: @gray-dark;
+}
+
+.wiki h3,
+.wiki h4,
+.wiki h5,
+.wiki h6 {
+    .h4;
+    font-weight: bold;
+}
+
+/* ------------ General ------------*/
+
+li p {
+    margin-top: 0;
+}
+
+p {
+    margin: 0 0 @GGW 0;
+}

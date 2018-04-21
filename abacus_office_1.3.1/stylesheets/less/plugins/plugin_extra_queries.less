@@ -1,0 +1,90 @@
+@import url("../variables.less");
+@import url("../mixins.less");
+/* ------------ Styles for Extra queries plugin ------------ */
+
+#wrapper {
+    
+    /*----- Green button -----*/
+    a.eq-button.eq-button-success, .eq-button.eq-button-success {
+        .rounded;
+        .gradient-green;
+        .btn;
+        &:hover, &:focus, &:active {
+            background: @green;
+        }
+    }
+
+    /*----- Default button -----*/
+    a.eq-button,
+    .eq-button {
+        .rounded;
+        .gradient-default;
+        .btn;
+        font-size: 12px;
+        &:hover, &:focus, &:active {
+            background: @gray-lighter;
+        }
+
+        .eq-caret {
+            margin-top: 14px;
+        }
+
+        .eq-filter-delete {
+            margin-top: 0.5*@GGW;
+        }
+
+        &.eq-filter-button {
+            padding-right: @GGW;
+        }
+    }
+
+    /*----- Other -----*/
+    #query_form_with_buttons {
+        .buttons {
+            padding-left: 0;
+        }
+
+        .buttons #eq-apply-query + a.eq-button {
+            .gradient-red;
+            &:hover, &:focus, &:active {
+                background: @red;
+            }
+        }
+
+        #eq-filters {
+            margin-bottom: @GGW;
+        }
+
+        .eq-panel td {
+            padding-left: 0;
+        }
+
+        fieldset.collapsible div.eq-columns-list {
+            padding-left: @GGW;
+        }
+
+        .eq-search {
+            background-color: @white;
+            background-position: 95% 50%;
+        }
+
+        .eq-filter-wrap {
+            margin-bottom: 0;
+        }
+    }
+
+    /* #query_form_with_buttons */
+    #sidebar {
+        .eq-sidebar-queries {
+            padding-left: 0;
+        }
+
+        .eq-sidebar-queries ul {
+            padding-left: 2*@GGW;
+        }
+
+        .eq-pin.fa:before {
+            font-size: 12px !important;
+        }
+    }
+}

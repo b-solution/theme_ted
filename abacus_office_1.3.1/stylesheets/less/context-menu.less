@@ -1,0 +1,29 @@
+@import url("variables.less");
+@import url("mixins.less");
+/*Context Menu*/
+
+#context-menu {
+    margin-top: -124px;
+}
+
+body[class*="project-"] #context-menu {
+    margin-top: -169px;
+}
+
+tr.context-menu-selection {
+    background-color: #e6eaef !important;
+    color: #666666 !important;
+    
+    a {
+        color: @text-color !important;
+    }
+
+    &:hover {
+        background-color: #e6eaef !important;
+        color: @black !important;
+    }
+
+    &:hover a {
+        color: @black !important;
+    }
+}

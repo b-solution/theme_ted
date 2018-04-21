@@ -1,0 +1,101 @@
+@import url("../variables.less");
+@import url("../mixins.less");
+/*Styles for Redmine Custom menu*/
+/*Admin settings style*/
+
+button#cm-save-structure,
+input.main-form-button {
+    .rounded;
+    color: @white;
+    text-transform: uppercase;
+    border: 1px solid @green;
+    background: lighten(@green, 30%);
+    padding: 0 27px;
+    line-height: 28px;
+    font-size: 12px !important;
+}
+
+button#cm-save-structure:hover,
+input.main-form-button:hover {
+    background: @green !important;
+    border: 1px solid darken(@green, 20%);
+}
+
+.csv {
+    padding: 0 !important;
+}
+
+#top-menu .menu_expander {
+    display: none;
+}
+
+/*Application styles based on a class in body - see theme.js, line 16 and further */
+
+body.redmine_custom_menu {
+    #top-menu {
+        box-sizing: border-box !important;
+        box-shadow: none;
+        padding: 0.5*@GGW 0 0 0 !important;
+        overflow: visible;
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        height: 50px;
+    }
+
+    #header {
+        padding-top: 50px;
+        margin: 0;
+    }
+
+    #account:hover ul {
+        right: 2px;
+    }
+
+    #top-menu ul.cm-menu-header .dropdown-menu {
+        padding: @GGW !important;
+        left: 12px !important;
+        top: 32px !important;
+    }
+
+    #top-menu ul.cm-menu-header .dropdown-menu a.fa {
+        padding-left: 0 !important;
+    }
+
+    #top-menu ul.cm-menu-header .dropdown-menu a:hover,
+    #top-menu ul.cm-menu-header .dropdown-menu a:hover {
+        color: darken(@query-form, 20%) !important;
+        background: none;
+    }
+
+    #top-menu ul.cm-menu-header .dropdown-menu:hover {
+        display: block;
+    }
+
+    #top-menu ul.cm-menu-header .dropdown-menu .df {
+        background: none;
+    }
+
+    .contextual {
+        #cm_contextual_menu {
+            float: right;
+            margin: 0 0 0 8px;
+            padding: 4px 0;
+        }
+
+        #cm_contextual_menu a {
+            margin: 0;
+        }
+
+        #cm_contextual_menu .icon {
+            line-height: @BLH;
+        }
+
+    }
+
+}
+
+body.menu_fixed #header {
+    padding-top: 50px;
+    margin: 0;
+}

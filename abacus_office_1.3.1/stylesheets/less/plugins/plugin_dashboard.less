@@ -1,0 +1,48 @@
+@import url("../variables.less");
+@import url("../mixins.less");
+
+/*Styles for Dashboard plugin*/
+body.controller-rdb_taskboard {
+    #content {
+        position: unset;
+    }
+
+    a#rdb-refresh {
+        margin: 0;
+    }
+
+    a#rdb-refresh:before {
+        text-align: center;
+        margin: auto;
+    }
+
+    .rdb-container-wrapper {
+        min-width: 180px;
+    }
+
+    .rdb-list > ul > li > a.rdb-checkbox-link,
+    .rdb-icons .rdb-list > ul > li > a {
+        padding-left: @GGW;
+    }
+
+    .rdb-container h3 {
+        padding: 0.5*@GGW;
+    }
+
+    #rdb-header .rdb-filter,
+    #rdb-header .rdb-option {
+        margin-top: 4px;
+    }
+
+    .rdb-headers .rdb-column h3 {
+        font-size: @BFS;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 680px) {
+    #rdb-header .rdb-board {
+        width: 100%;
+    }
+}
